@@ -1,0 +1,341 @@
+/* ==========================================================================
+   Responsive Styles — Afeef KT Portfolio
+   ========================================================================== */
+
+/* --- Tablet: 768px — 1023px --- */
+@media (max-width: 1023px) {
+    .about-grid {
+        grid-template-columns: 240px 1fr;
+        gap: var(--space-10);
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--space-4);
+        padding-left: 50px;
+        padding-right: 0;
+        text-align: left !important;
+    }
+
+    .timeline-card {
+        order: 1;
+    }
+
+    .timeline-media {
+        order: 2;
+        max-width: 520px;
+    }
+
+    .timeline-card:hover,
+    .timeline-item:focus-within .timeline-card,
+    .timeline-media:hover,
+    .timeline-item:focus-within .timeline-media {
+        transform: none;
+    }
+
+    .timeline-dot {
+        left: 14px !important;
+        right: auto !important;
+        transform: none !important;
+    }
+
+    .contact-grid {
+        gap: var(--space-10);
+    }
+
+    .section-header.has-accent {
+        gap: var(--space-8);
+    }
+
+    .section-visual-accent {
+        flex-basis: 320px;
+    }
+
+    /* AI Projects */
+    .ai-projects-grid {
+        gap: var(--space-6);
+    }
+}
+
+/* --- Mobile: up to 767px --- */
+@media (max-width: 767px) {
+    .section {
+        padding: var(--space-16) 0;
+    }
+
+    .section-title {
+        font-size: var(--text-3xl);
+    }
+
+    .section-header {
+        margin-bottom: var(--space-10);
+    }
+
+    .section-header.has-accent {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-5);
+    }
+
+    .section-visual-accent {
+        width: 100%;
+        max-width: 520px;
+        flex-basis: auto;
+    }
+
+    /* Navigation */
+    .nav-hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: var(--nav-height);
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background:
+            linear-gradient(180deg, rgba(7, 29, 41, 0.96), rgba(6, 45, 61, 0.94));
+        border-bottom: 1px solid rgba(125, 221, 242, 0.28);
+        box-shadow: 0 18px 34px rgba(6, 45, 61, 0.24);
+        padding: var(--space-4) 0;
+        gap: var(--space-2);
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        margin: 0 var(--space-6);
+        padding: var(--space-3) var(--space-4);
+        font-size: var(--text-base);
+    }
+
+    .nav-links a::after {
+        display: none;
+    }
+
+    /* Hero */
+    .hero-name {
+        font-size: clamp(3rem, 16vw, 4.6rem);
+    }
+
+    .hero-title {
+        font-size: var(--text-xl);
+    }
+
+    .hero-tagline {
+        font-size: var(--text-base);
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-actions .btn {
+        justify-content: center;
+        width: min(100%, 280px);
+    }
+
+    /* About */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+
+    .about-image-wrapper {
+        max-width: 240px;
+        margin: 0 auto;
+    }
+
+    /* Timeline */
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--space-4);
+        padding-left: 50px;
+        padding-right: 0;
+        text-align: left !important;
+        margin-bottom: var(--space-8);
+    }
+
+    .timeline-card {
+        order: 1;
+    }
+
+    .timeline-media {
+        order: 2;
+        max-width: 100%;
+    }
+
+    .timeline-card:hover,
+    .timeline-item:focus-within .timeline-card,
+    .timeline-media:hover,
+    .timeline-item:focus-within .timeline-media {
+        transform: none;
+    }
+
+    .timeline-dot {
+        left: 14px !important;
+        right: auto !important;
+        transform: none !important;
+    }
+
+    .timeline-card {
+        padding: var(--space-5);
+    }
+
+    /* Skills */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-4);
+    }
+
+    .skill-card {
+        padding: var(--space-5);
+    }
+
+    /* Projects */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-filters {
+        gap: var(--space-2);
+    }
+
+    /* AI Projects */
+    .ai-projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ai-intro {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+
+    /* Awards */
+    .awards-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Footer */
+    .footer .container {
+        flex-direction: column;
+        gap: var(--space-4);
+        text-align: center;
+    }
+
+    /* Back to top */
+    .back-to-top {
+        right: var(--space-4);
+        bottom: var(--space-4);
+    }
+}
+
+/* --- Small Mobile: up to 479px --- */
+@media (max-width: 479px) {
+    .container {
+        padding: 0 var(--space-4);
+    }
+
+    .section {
+        padding: var(--space-12) 0;
+    }
+
+    .section-title {
+        font-size: var(--text-2xl);
+    }
+
+    .section-visual-accent {
+        max-width: 100%;
+    }
+
+    .hero {
+        padding-top: calc(var(--nav-height) + var(--space-4));
+    }
+
+    .hero-name {
+        font-size: clamp(2.45rem, 15vw, 3.3rem);
+    }
+
+    .hero-title {
+        font-size: var(--text-lg);
+    }
+
+    .hero-content {
+        padding: var(--space-4);
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-card {
+        padding: var(--space-4);
+    }
+
+    .timeline-role {
+        font-size: var(--text-lg);
+    }
+
+    .education-card,
+    .awards-card {
+        padding: var(--space-6);
+    }
+
+    /* AI Projects */
+    .ai-project-card-body {
+        padding: var(--space-4);
+    }
+
+    .ai-project-card-header {
+        padding: var(--space-4);
+    }
+
+    .ai-intro {
+        padding: var(--space-4);
+    }
+
+    .contact-cta {
+        padding: var(--space-6);
+    }
+}

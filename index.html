@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Afeef KT — Embedded Software Development Engineer. Portfolio showcasing automotive software testing, embedded systems, AUTOSAR, motor control, and Python tooling.">
+    <meta property="og:title" content="Afeef KT | Embedded Software Engineer Portfolio">
+    <meta property="og:description"
+        content="Professional portfolio covering automotive software validation, embedded systems engineering, and software tool development.">
+    <meta property="og:type" content="website">
+    <title>Afeef KT | Embedded Software Engineer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- SVG Icon Sprite -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <!-- Map Pin -->
+        <symbol id="icon-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+        </symbol>
+        <!-- Email -->
+        <symbol id="icon-email" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+        </symbol>
+        <!-- LinkedIn -->
+        <symbol id="icon-linkedin" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+        </symbol>
+        <!-- GitHub -->
+        <symbol id="icon-github" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+        </symbol>
+        <!-- Phone -->
+        <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+        </symbol>
+        <!-- Flag -->
+        <symbol id="icon-flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
+            <line x1="4" y1="22" x2="4" y2="15" />
+        </symbol>
+        <!-- Arrow Up -->
+        <symbol id="icon-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5" />
+            <polyline points="5 12 12 5 19 12" />
+        </symbol>
+        <!-- Arrow Down -->
+        <symbol id="icon-arrow-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <polyline points="19 12 12 19 5 12" />
+        </symbol>
+        <!-- External Link -->
+        <symbol id="icon-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+            <polyline points="15 3 21 3 21 9" />
+            <line x1="10" y1="14" x2="21" y2="3" />
+        </symbol>
+        <!-- Download -->
+        <symbol id="icon-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+        </symbol>
+        <!-- CPU / Chip -->
+        <symbol id="icon-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="4" width="16" height="16" rx="2" ry="2" />
+            <rect x="9" y="9" width="6" height="6" />
+            <line x1="9" y1="1" x2="9" y2="4" />
+            <line x1="15" y1="1" x2="15" y2="4" />
+            <line x1="9" y1="20" x2="9" y2="23" />
+            <line x1="15" y1="20" x2="15" y2="23" />
+            <line x1="20" y1="9" x2="23" y2="9" />
+            <line x1="20" y1="14" x2="23" y2="14" />
+            <line x1="1" y1="9" x2="4" y2="9" />
+            <line x1="1" y1="14" x2="4" y2="14" />
+        </symbol>
+        <!-- Code -->
+        <symbol id="icon-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6" />
+            <polyline points="8 6 2 12 8 18" />
+        </symbol>
+        <!-- Test / Beaker -->
+        <symbol id="icon-test" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+        </symbol>
+        <!-- Car / Automotive -->
+        <symbol id="icon-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+                d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a1 1 0 0 0-.8.4L1.74 11 .85 11.86a1 1 0 0 0-.85.99V16h3" />
+            <circle cx="6.5" cy="16.5" r="2.5" />
+            <circle cx="16.5" cy="16.5" r="2.5" />
+        </symbol>
+        <!-- Chart / Graph -->
+        <symbol id="icon-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="20" x2="18" y2="10" />
+            <line x1="12" y1="20" x2="12" y2="4" />
+            <line x1="6" y1="20" x2="6" y2="14" />
+        </symbol>
+        <!-- Settings / Gear -->
+        <symbol id="icon-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3" />
+            <path
+                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+        </symbol>
+        <!-- Graduation Cap -->
+        <symbol id="icon-graduation" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+            <path d="M6 12v5c3 3 9 3 12 0v-5" />
+        </symbol>
+        <!-- Award / Trophy -->
+        <symbol id="icon-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="7" />
+            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+        </symbol>
+        <!-- User -->
+        <symbol id="icon-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+        </symbol>
+        <!-- Briefcase -->
+        <symbol id="icon-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+        </symbol>
+        <!-- Terminal -->
+        <symbol id="icon-terminal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="4 17 10 11 4 5" />
+            <line x1="12" y1="19" x2="20" y2="19" />
+        </symbol>
+        <!-- Box / Docker -->
+        <symbol id="icon-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+            <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+            <line x1="12" y1="22.08" x2="12" y2="12" />
+        </symbol>
+        <!-- Zap / Motor -->
+        <symbol id="icon-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+        </symbol>
+        <!-- File Spreadsheet / Excel -->
+        <symbol id="icon-file-spreadsheet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="8" y1="13" x2="16" y2="13" />
+            <line x1="8" y1="17" x2="16" y2="17" />
+            <line x1="10" y1="9" x2="10" y2="21" />
+        </symbol>
+        <!-- Shield / Security -->
+        <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        </symbol>
+        <!-- Layout / Diagram -->
+        <symbol id="icon-layout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+            <line x1="3" y1="9" x2="21" y2="9" />
+            <line x1="9" y1="21" x2="9" y2="9" />
+        </symbol>
+        <!-- Brain / AI -->
+        <symbol id="icon-brain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+                d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2z" />
+            <path
+                d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2z" />
+        </symbol>
+        <!-- Camera -->
+        <symbol id="icon-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+            <circle cx="12" cy="13" r="4" />
+        </symbol>
+        <!-- Server -->
+        <symbol id="icon-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+            <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+            <line x1="6" y1="6" x2="6.01" y2="6" />
+            <line x1="6" y1="18" x2="6.01" y2="18" />
+        </symbol>
+    </svg>
+
+    <!-- Skip to Content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ====== Header / Navigation ====== -->
+    <header class="header" id="navbar">
+        <div class="container">
+            <a href="#hero" class="nav-logo">Afeef KT</a>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#ai-projects">AI Lab</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ====== Main Content ====== -->
+    <main id="main-content">
+
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <div class="hero-badge fade-in">
+                    <svg class="icon">
+                        <use href="#icon-map-pin" />
+                    </svg>
+                    <span>Regensburg, Germany</span>
+                </div>
+                <h1 class="hero-name fade-in fade-in-delay-1">Afeef KT</h1>
+                <p class="hero-title fade-in fade-in-delay-2">
+                    <span id="typewriter">Embedded Software Development Engineer</span>
+                </p>
+                <p class="hero-tagline fade-in fade-in-delay-3">
+                    Mechanical engineer turned embedded software specialist. 8+ years building
+                    safety-critical systems across aerospace and automotive domains — from 5th-generation
+                    fighter aircraft to AUTOSAR motor control. Hobby tinkerer with local LLMs and AI on the side.
+                </p>
+                <div class="hero-actions fade-in fade-in-delay-4">
+                    <a href="#projects" class="btn btn-primary">
+                        <svg class="icon icon-sm">
+                            <use href="#icon-code" />
+                        </svg>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <svg class="icon icon-sm">
+                            <use href="#icon-email" />
+                        </svg>
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+
+            <!-- ===== Engineering Circuit Background Decoration ===== -->
+            <div class="circuit-decoration" aria-hidden="true">
+                <!-- PCB background texture — lowest layer, behind SVG animations -->
+                <div class="hero-bg-img" aria-hidden="true"></div>
+                <svg class="circuit-svg" viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                    <!-- Static trace skeleton -->
+                    <g stroke="#1e40af" stroke-width="1" fill="none" opacity="0.1">
+                        <path d="M0 80 H180 V140 H320 V80 H440"/>
+                        <path d="M0 200 H80 V300 H220 V240 H380 V300 H520"/>
+                        <path d="M0 450 H160 V400 H280 V460 H400"/>
+                        <path d="M1440 80 H1260 V140 H1120 V80 H1000"/>
+                        <path d="M1440 200 H1360 V300 H1220 V240 H1060"/>
+                        <path d="M1440 450 H1280 V400 H1160 V460 H1040"/>
+                        <path d="M600 80 V160 H680 V240 H600 V320"/>
+                        <path d="M840 80 V160 H760 V240 H840 V320"/>
+                        <path d="M520 300 H600"/>
+                        <path d="M840 300 H920"/>
+                        <path d="M400 460 H520 V500 H680"/>
+                        <path d="M1040 460 H920 V500 H760"/>
+                    </g>
+
+                    <!-- IC Chip — Left (MCU) -->
+                    <g stroke="#1e40af" fill="none" stroke-width="1" opacity="0.15">
+                        <rect x="420" y="255" width="56" height="70" rx="2"/>
+                        <line x1="404" y1="268" x2="420" y2="268"/><line x1="404" y1="283" x2="420" y2="283"/>
+                        <line x1="404" y1="298" x2="420" y2="298"/><line x1="404" y1="313" x2="420" y2="313"/>
+                        <line x1="476" y1="268" x2="492" y2="268"/><line x1="476" y1="283" x2="492" y2="283"/>
+                        <line x1="476" y1="298" x2="492" y2="298"/><line x1="476" y1="313" x2="492" y2="313"/>
+                        <circle cx="426" cy="261" r="3" fill="#1e40af" stroke="none"/>
+                        <text x="448" y="296" font-family="monospace" font-size="8" fill="#1e40af" text-anchor="middle">MCU</text>
+                    </g>
+
+                    <!-- IC Chip — Right (ECU) -->
+                    <g stroke="#1e40af" fill="none" stroke-width="1" opacity="0.15">
+                        <rect x="964" y="255" width="56" height="70" rx="2"/>
+                        <line x1="948" y1="268" x2="964" y2="268"/><line x1="948" y1="283" x2="964" y2="283"/>
+                        <line x1="948" y1="298" x2="964" y2="298"/><line x1="948" y1="313" x2="964" y2="313"/>
+                        <line x1="1020" y1="268" x2="1036" y2="268"/><line x1="1020" y1="283" x2="1036" y2="283"/>
+                        <line x1="1020" y1="298" x2="1036" y2="298"/><line x1="1020" y1="313" x2="1036" y2="313"/>
+                        <circle cx="970" cy="261" r="3" fill="#1e40af" stroke="none"/>
+                        <text x="992" y="296" font-family="monospace" font-size="8" fill="#1e40af" text-anchor="middle">ECU</text>
+                    </g>
+
+                    <!-- Resistor symbols -->
+                    <path d="M320 100 L332 88 L344 112 L356 88 L368 100" stroke="#1e40af" stroke-width="1.5" fill="none" opacity="0.15"/>
+                    <path d="M1120 100 L1108 88 L1096 112 L1084 88 L1072 100" stroke="#1e40af" stroke-width="1.5" fill="none" opacity="0.15"/>
+
+                    <!-- Capacitor symbols -->
+                    <g stroke="#0891b2" stroke-width="1.5" fill="none" opacity="0.18">
+                        <line x1="174" y1="291" x2="186" y2="291"/><line x1="174" y1="300" x2="186" y2="300"/>
+                        <line x1="180" y1="278" x2="180" y2="291"/><line x1="180" y1="300" x2="180" y2="314"/>
+                    </g>
+                    <g stroke="#0891b2" stroke-width="1.5" fill="none" opacity="0.18">
+                        <line x1="1254" y1="291" x2="1266" y2="291"/><line x1="1254" y1="300" x2="1266" y2="300"/>
+                        <line x1="1260" y1="278" x2="1260" y2="291"/><line x1="1260" y1="300" x2="1260" y2="314"/>
+                    </g>
+
+                    <!-- Oscilloscope waveform strip -->
+                    <path class="ct-wave"
+                        d="M580 490 L600 490 L600 465 L640 465 L640 490 L680 490 L680 465 L720 465 L720 490 L760 490 L760 465 L800 465 L800 490 L840 490 L840 465 L860 465 L860 490"
+                        stroke="#0891b2" stroke-width="1.5" fill="none" opacity="0.22"/>
+
+                    <!-- Binary / hex text decorations -->
+                    <text x="28" y="370" font-family="monospace" font-size="9" fill="#1e40af" opacity="0.07">01101000 10101010 11001100 00110011</text>
+                    <text x="1090" y="380" font-family="monospace" font-size="9" fill="#1e40af" opacity="0.07">10110101 11000011 01010101</text>
+                    <text x="28" y="555" font-family="monospace" font-size="9" fill="#0891b2" opacity="0.07">// AUTOSAR · ISO 26262 · FOC · IPMSM · CAN · LIN</text>
+                    <text x="920" y="40" font-family="monospace" font-size="9" fill="#0891b2" opacity="0.08">0xFFE4 &lt;&lt; 2 | 0x0001 /* motor_ctrl */</text>
+                    <text x="28" y="40" font-family="monospace" font-size="9" fill="#1e40af" opacity="0.08">REG_PWM = 0x3FFF; /* duty_cycle */</text>
+
+                    <!-- Animated signal traces (dot traveling the path) -->
+                    <g fill="none" stroke-width="2">
+                        <path class="ct-a" d="M0 80 H180 V140 H320 V80 H440"             stroke="#3b82f6"/>
+                        <path class="ct-b" d="M0 200 H80 V300 H220 V240 H380 V300 H520"  stroke="#0891b2"/>
+                        <path class="ct-c" d="M0 450 H160 V400 H280 V460 H400"            stroke="#3b82f6"/>
+                        <path class="ct-d" d="M1440 80 H1260 V140 H1120 V80 H1000"        stroke="#3b82f6"/>
+                        <path class="ct-e" d="M1440 200 H1360 V300 H1220 V240 H1060"      stroke="#0891b2"/>
+                        <path class="ct-f" d="M1440 450 H1280 V400 H1160 V460 H1040"      stroke="#3b82f6"/>
+                    </g>
+
+                    <!-- Pulsing junction nodes -->
+                    <g class="pulse-group">
+                        <circle class="cnode" cx="180"  cy="80"  r="3.5" fill="#3b82f6"/>
+                        <circle class="cnode" cx="320"  cy="140" r="3.5" fill="#3b82f6"/>
+                        <circle class="cnode" cx="80"   cy="200" r="3.5" fill="#3b82f6"/>
+                        <circle class="cnode" cx="220"  cy="300" r="3.5" fill="#0891b2"/>
+                        <circle class="cnode" cx="160"  cy="450" r="3.5" fill="#0891b2"/>
+                        <circle class="cnode" cx="1260" cy="80"  r="3.5" fill="#0891b2"/>
+                        <circle class="cnode" cx="1120" cy="140" r="3.5" fill="#0891b2"/>
+                        <circle class="cnode" cx="1360" cy="200" r="3.5" fill="#3b82f6"/>
+                        <circle class="cnode" cx="1280" cy="450" r="3.5" fill="#0891b2"/>
+                    </g>
+
+                </svg>
+
+                <!-- Floating engineering tech badges — Aerospace + Embedded -->
+                <div class="hero-tech-float htf-1"><span class="ftdot"></span>AUTOSAR</div>
+                <div class="hero-tech-float htf-2"><span class="ftdot"></span>Aerospace R&amp;D</div>
+                <div class="hero-tech-float htf-3"><span class="ftdot"></span>Motor FOC</div>
+                <div class="hero-tech-float htf-4"><span class="ftdot"></span>Hydraulic Sys</div>
+                <div class="hero-tech-float htf-5"><span class="ftdot"></span>Landing Gear</div>
+                <div class="hero-tech-float htf-6"><span class="ftdot"></span>ECS / Bleed Air</div>
+                <div class="hero-tech-float htf-7"><span class="ftdot"></span>ISO 26262</div>
+                <div class="hero-tech-float htf-8"><span class="ftdot"></span>0xFF &lt;&lt; 2</div>
+            </div>
+            <!-- ===== End Circuit Decoration ===== -->
+        </section>
+
+        <!-- About Section -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">From aerospace R&D to automotive embedded software</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-image-wrapper fade-in">
+                        <img
+                            src="assets/images/profile.png"
+                            alt="Afeef KT — Embedded Software Engineer"
+                            class="about-image"
+                            loading="lazy"
+                            width="300"
+                            height="300"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                        >
+                        <div class="about-image-placeholder" style="display:none;">
+                            <svg class="icon">
+                                <use href="#icon-user" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="about-text fade-in fade-in-delay-1">
+                        <h3>Hello, I'm Afeef</h3>
+                        <p>
+                            I'm a Mechanical Engineering graduate who found his calling at the intersection
+                            of hardware and software. My career began at India's Aeronautical Development
+                            Agency, where I spent nearly 4 years designing and optimizing systems for
+                            next-generation fighter aircraft — working with hydraulics, environmental control
+                            systems, and dynamic modeling in MATLAB/Simulink.
+                        </p>
+                        <p>
+                            That foundation in control systems and simulation naturally led me into automotive
+                            embedded software. Over the past 4+ years, I've been developing and testing
+                            AUTOSAR-compliant components, building motor control algorithms for multi-phase
+                            IPMSM drives, implementing Field-Oriented Control (FOC) strategies, and
+                            creating toolchains for unit testing and code generation.
+                        </p>
+                        <p>
+                            Today, I combine model-based design expertise with hands-on C/C++ development,
+                            Python automation, and embedded systems work — always with a focus on
+                            safety-critical, standards-compliant engineering. Outside of work, I explore
+                            local AI and LLM tools, building projects that run entirely on my own hardware.
+                        </p>
+                        <div class="about-details">
+                            <span class="about-detail">
+                                <svg class="icon">
+                                    <use href="#icon-flag" />
+                                </svg>
+                                Indian
+                            </span>
+                            <span class="about-detail">
+                                <svg class="icon">
+                                    <use href="#icon-map-pin" />
+                                </svg>
+                                Regensburg, Germany
+                            </span>
+                            <span class="about-detail">
+                                <svg class="icon">
+                                    <use href="#icon-email" />
+                                </svg>
+                                afeefkt@gmail.com
+                            </span>
+                        </div>
+                        <a href="#contact" class="btn btn-primary">
+                            <svg class="icon icon-sm">
+                                <use href="#icon-download" />
+                            </svg>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2 class="section-title">Work Experience</h2>
+                    <p class="section-subtitle">My professional journey across aerospace and automotive engineering</p>
+                </div>
+                <div class="timeline">
+                    <!-- Job 1: Koosys (Current) -->
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">Aug 2024 — Present</span>
+                            <h3 class="timeline-role">Embedded Software / Test Engineer</h3>
+                            <p class="timeline-company">Koosys GmbH | Regensburg</p>
+                            <ul class="timeline-duties">
+                                <li>Developing motor control algorithms for 6-phase IPMSM and Field-Oriented Control
+                                    (FOC) software</li>
+                                <li>Creating model-based design algorithms, generating AUTOSAR ASIL-B compliant code via
+                                    Embedded Coder</li>
+                                <li>Building MIL test models and tuning control loops for production motor drives</li>
+                                <li>Optimizing MATLAB/Embedded Coder toolchains and integrating generated code into
+                                    production software</li>
+                            </ul>
+                            <div class="timeline-tools">
+                                <span>MATLAB/Simulink</span>
+                                <span>Embedded Coder</span>
+                                <span>C/C++</span>
+                                <span>Python</span>
+                                <span>CppUTest</span>
+                                <span>CANoe</span>
+                                <span>WinIdea</span>
+                                <span>Git</span>
+                            </div>
+                        </div>
+                        <figure class="timeline-media timeline-media-photo">
+                            <img src="assets/images/FOC____MOtorCtrl.png" alt="" loading="lazy" width="1729" height="910">
+                        </figure>
+                    </div>
+
+                    <!-- Job 2: Valentum / Koosys -->
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <figure class="timeline-media timeline-media-wide">
+                            <img src="assets/images/PCBBoard__.png" alt="" loading="lazy" width="1983" height="793">
+                        </figure>
+                        <div class="timeline-card">
+                            <span class="timeline-date">Jul 2023 — Aug 2024</span>
+                            <h3 class="timeline-role">Embedded Software / Test Engineer</h3>
+                            <p class="timeline-company">Valentum Engineering GmbH | External at Koosys GmbH, Regensburg
+                            </p>
+                            <ul class="timeline-duties">
+                                <li>Conducted unit, integration, and system testing across SWE4–SWE6 development phases
+                                </li>
+                                <li>Performed static code analysis and automated testing using Java and CAPL scripting
+                                </li>
+                                <li>Debugged embedded hardware via WinIDEA and simulated CAN networks with CANoe</li>
+                            </ul>
+                            <div class="timeline-tools">
+                                <span>Eclipse</span>
+                                <span>Java</span>
+                                <span>TESSY</span>
+                                <span>WinIdea</span>
+                                <span>CANoe 17</span>
+                                <span>Helix QAC</span>
+                                <span>CppUTest</span>
+                                <span>DOORS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job 3: TATA Elxsi -->
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">Jul 2021 — Mar 2023</span>
+                            <h3 class="timeline-role">Model Based Design Engineer</h3>
+                            <p class="timeline-company">TATA Elxsi Ltd. | Bangalore</p>
+                            <ul class="timeline-duties">
+                                <li>Developed AUTOSAR-based Electric Power Steering (EPS) components using Simulink and
+                                    Stateflow</li>
+                                <li>Generated production C code, performed static model analysis with MXAM and Polyspace
+                                </li>
+                                <li>Validated software through MIL/SIL testing and ensured compliance with ASPICE, ISO
+                                    26262, MISRA C</li>
+                            </ul>
+                            <div class="timeline-tools">
+                                <span>MATLAB/Simulink</span>
+                                <span>Stateflow</span>
+                                <span>MXAM</span>
+                                <span>Polyspace</span>
+                                <span>Embedded Coder</span>
+                                <span>Reactis</span>
+                                <span>DOORS/DNG</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                        <figure class="timeline-media timeline-media-wide">
+                            <img src="assets/images/AUTOSARCommunication.png" alt="" loading="lazy" width="1983" height="793">
+                        </figure>
+                    </div>
+
+                    <!-- Job 4: ADA -->
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <figure class="timeline-media timeline-media-photo">
+                            <img src="assets/images/Aerospace.png" alt="" loading="lazy" width="1672" height="941">
+                        </figure>
+                        <div class="timeline-card">
+                            <span class="timeline-date">Sep 2017 — Jul 2021</span>
+                            <h3 class="timeline-role">Mechanical Engineer</h3>
+                            <p class="timeline-company">Aeronautical Development Agency | Bangalore</p>
+                            <ul class="timeline-duties">
+                                <li>Designed geometry and optimized systems for a 5th-generation fighter aircraft
+                                    program</li>
+                                <li>Worked on aircraft subsystems including hydraulics, ECS, and electrical systems</li>
+                                <li>Created dynamic and load models in MATLAB/Simulink; automated weight distribution
+                                    scripting</li>
+                                <li>Conducted conceptual design studies for radome and canopy components</li>
+                            </ul>
+                            <div class="timeline-tools">
+                                <span>MATLAB/Simulink</span>
+                                <span>Stateflow</span>
+                                <span>Simscape</span>
+                                <span>Catia V5</span>
+                                <span>Team Center</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Aerospace Engineering Schematics Overlay -->
+            <div class="section-anim-layer anim-aerospace" aria-hidden="true">
+                <svg viewBox="0 0 1400 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                    <!-- Landing Gear Assembly — left margin -->
+                    <g stroke="#1e40af" fill="none" opacity="0.15" stroke-width="1.5">
+                        <line x1="90" y1="70" x2="90" y2="230"/>
+                        <line x1="58" y1="230" x2="122" y2="230"/>
+                        <circle cx="58" cy="252" r="22" stroke-width="2"/>
+                        <circle cx="58" cy="252" r="9" stroke-width="1"/>
+                        <circle cx="122" cy="252" r="22" stroke-width="2"/>
+                        <circle cx="122" cy="252" r="9" stroke-width="1"/>
+                        <line x1="90" y1="110" x2="165" y2="210"/>
+                        <circle cx="90" cy="110" r="5" fill="#1e40af" stroke="none"/>
+                        <circle cx="165" cy="210" r="5" fill="#1e40af" stroke="none"/>
+                        <rect x="40" y="88" width="18" height="68" rx="4"/>
+                        <!-- Animated actuator piston -->
+                        <line x1="49" y1="156" x2="49" y2="202" stroke-width="3">
+                            <animate attributeName="y2" values="202;176;202" dur="4.5s" calcMode="spline"
+                                keySplines="0.42 0 0.58 1;0.42 0 0.58 1" repeatCount="indefinite"/>
+                        </line>
+                        <rect x="82" y="64" width="16" height="12" rx="2"/>
+                        <rect x="82" y="224" width="16" height="12" rx="2"/>
+                        <text x="90" y="310" font-family="monospace" font-size="8" fill="#1e40af" text-anchor="middle" opacity="0.7">MAIN LANDING GEAR</text>
+                        <text x="90" y="322" font-family="monospace" font-size="7" fill="#0891b2" text-anchor="middle" opacity="0.55">HYDRAULIC RETRACT</text>
+                    </g>
+
+                    <!-- Hydraulic System Schematic — right margin -->
+                    <g stroke="#0891b2" fill="none" opacity="0.14" stroke-width="1.5">
+                        <rect x="1250" y="100" width="90" height="32" rx="3"/>
+                        <!-- Animated piston rod -->
+                        <line x1="1250" y1="116" x2="1200" y2="116" stroke-width="3">
+                            <animate attributeName="x1" values="1250;1278;1250" dur="5s" calcMode="spline"
+                                keySplines="0.42 0 0.58 1;0.42 0 0.58 1" repeatCount="indefinite"/>
+                        </line>
+                        <line x1="1340" y1="96" x2="1340" y2="136" stroke-width="2.5"/>
+                        <path d="M1250,116 L1220,116 L1220,182"/>
+                        <path d="M1340,116 L1360,116 L1360,182"/>
+                        <path d="M1220,198 L1236,214 L1220,230 L1204,214 Z"/>
+                        <line x1="1220" y1="182" x2="1220" y2="198"/>
+                        <line x1="1220" y1="230" x2="1220" y2="246"/>
+                        <rect x="1280" y="170" width="44" height="30" rx="2"/>
+                        <line x1="1280" y1="170" x2="1280" y2="160"/>
+                        <line x1="1324" y1="170" x2="1324" y2="160"/>
+                        <circle cx="1302" cy="240" r="20"/>
+                        <path d="M1292,233 L1312,233 L1302,250 Z" fill="#0891b2" opacity="0.25"/>
+                        <text x="1302" y="292" font-family="monospace" font-size="8" fill="#0891b2" text-anchor="middle" opacity="0.65">HYD. SYSTEM</text>
+                        <text x="1302" y="304" font-family="monospace" font-size="7" fill="#1e40af" text-anchor="middle" opacity="0.5">P = 3000 PSI</text>
+                    </g>
+
+                    <!-- ECS Bleed Air — center lower strip -->
+                    <g stroke="#3b82f6" fill="none" opacity="0.10" stroke-width="1.5">
+                        <path d="M340,570 L500,570 L520,552 L660,552 L680,570 L860,570"/>
+                        <path d="M340,584 L500,584 L520,602 L660,602 L680,584 L860,584"/>
+                        <rect x="576" y="542" width="88" height="60" rx="3"/>
+                        <line x1="596" y1="542" x2="596" y2="602"/>
+                        <line x1="616" y1="542" x2="616" y2="602"/>
+                        <line x1="636" y1="542" x2="636" y2="602"/>
+                        <line x1="656" y1="542" x2="656" y2="602"/>
+                        <circle cx="400" cy="577" r="8"/>
+                        <circle cx="460" cy="577" r="6"/>
+                        <!-- Flowing air particles -->
+                        <circle r="5" fill="#3b82f6" opacity="0.55">
+                            <animateMotion path="M340,577 L560,577" dur="3.5s" repeatCount="indefinite" begin="0s"/>
+                        </circle>
+                        <circle r="5" fill="#3b82f6" opacity="0.45">
+                            <animateMotion path="M340,577 L560,577" dur="3.5s" repeatCount="indefinite" begin="1.2s"/>
+                        </circle>
+                        <circle r="4" fill="#0891b2" opacity="0.4">
+                            <animateMotion path="M340,577 L560,577" dur="3.5s" repeatCount="indefinite" begin="2.5s"/>
+                        </circle>
+                        <text x="600" y="640" font-family="monospace" font-size="8" fill="#3b82f6" text-anchor="middle" opacity="0.6">ECS — BLEED AIR SYSTEM</text>
+                        <text x="600" y="652" font-family="monospace" font-size="7" fill="#0891b2" text-anchor="middle" opacity="0.5">T_inlet = 200°C  |  P_reg = 45 PSI  |  MFR = 1.8 lb/min</text>
+                    </g>
+
+                    <!-- Title strip -->
+                    <text x="700" y="36" font-family="monospace" font-size="9" fill="#1e40af" text-anchor="middle" opacity="0.07">AEROSPACE SYSTEMS ─── CONTROL SURFACES ─── HYDRAULIC ACTUATION ─── 3000 PSI SYS</text>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    <p class="section-subtitle">Technologies and tools I work with daily</p>
+                </div>
+                <div class="skills-grid stagger-grid">
+                    <!-- Simulation & Modeling -->
+                    <div class="skill-card fade-in">
+                        <div class="skill-card-icon">
+                            <svg class="icon">
+                                <use href="#icon-chart" />
+                            </svg>
+                        </div>
+                        <h3>Simulation & Modeling</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">MATLAB</span>
+                            <span class="skill-pill">Simulink</span>
+                            <span class="skill-pill">Stateflow</span>
+                            <span class="skill-pill">Simscape</span>
+                            <span class="skill-pill">Model-Based Design</span>
+                            <span class="skill-pill">Embedded Coder</span>
+                        </div>
+                    </div>
+
+                    <!-- Programming -->
+                    <div class="skill-card fade-in fade-in-delay-1">
+                        <div class="skill-card-icon">
+                            <svg class="icon">
+                                <use href="#icon-code" />
+                            </svg>
+                        </div>
+                        <h3>Programming</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">C</span>
+                            <span class="skill-pill">C++</span>
+                            <span class="skill-pill">Python</span>
+                            <span class="skill-pill">MATLAB Scripting</span>
+                            <span class="skill-pill">Java</span>
+                            <span class="skill-pill">CAPL</span>
+                        </div>
+                    </div>
+
+                    <!-- Testing -->
+                    <div class="skill-card fade-in fade-in-delay-2">
+                        <div class="skill-card-icon">
+                            <svg class="icon">
+                                <use href="#icon-test" />
+                            </svg>
+                        </div>
+                        <h3>Testing & Validation</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">MIL / SIL / HIL</span>
+                            <span class="skill-pill">Unit Testing</span>
+                            <span class="skill-pill">CppUTest</span>
+                            <span class="skill-pill">GDB</span>
+                            <span class="skill-pill">Static Code Analysis</span>
+                            <span class="skill-pill">Helix QAC</span>
+                            <span class="skill-pill">TESSY</span>
+                        </div>
+                    </div>
+
+                    <!-- Automotive Standards -->
+                    <div class="skill-card fade-in">
+                        <div class="skill-card-icon">
+                            <svg class="icon">
+                                <use href="#icon-car" />
+                            </svg>
+                        </div>
+                        <h3>Automotive Standards</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">AUTOSAR</span>
+                            <span class="skill-pill">ISO 26262 (ASIL-B)</span>
+                            <span class="skill-pill">ASPICE</span>
+                            <span class="skill-pill">MISRA C</span>
+                            <span class="skill-pill">MAAB</span>
+                            <span class="skill-pill">DOORS / DNG</span>
+                        </div>
+                    </div>
+
+                    <!-- Embedded Systems -->
+                    <div class="skill-card fade-in fade-in-delay-1">
+                        <div class="skill-card-icon">
+                            <svg class="icon">
+                                <use href="#icon-cpu" />
+                            </svg>
+                        </div>
+                        <h3>Embedded Systems</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">ESP32</span>
+                            <span class="skill-pill">Motor Control</span>
+                            <span class="skill-pill">FOC</span>
+                            <span class="skill-pill">6-Phase IPMSM</span>
+                            <span class="skill-pill">CAN Bus</span>
+                            <span class="skill-pill">WinIdea</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Infrastructure -->
+                    <div class="skill-card fade-in fade-in-delay-2">
+                        <div class="skill-card-icon">
+                            <svg class="icon">
+                                <use href="#icon-settings" />
+                            </svg>
+                        </div>
+                        <h3>Tools & Infrastructure</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">Git</span>
+                            <span class="skill-pill">Docker</span>
+                            <span class="skill-pill">CANoe</span>
+                            <span class="skill-pill">Eclipse</span>
+                            <span class="skill-pill">JIRA</span>
+                            <span class="skill-pill">Catia V5</span>
+                            <span class="skill-pill">Scapy</span>
+                        </div>
+                    </div>
+
+                    <!-- AI & Machine Learning -->
+                    <div class="skill-card fade-in">
+                        <div class="skill-card-icon">
+                            <svg class="icon">
+                                <use href="#icon-brain" />
+                            </svg>
+                        </div>
+                        <h3>AI & Machine Learning</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">Local LLMs</span>
+                            <span class="skill-pill">RAG</span>
+                            <span class="skill-pill">FAISS</span>
+                            <span class="skill-pill">Ollama</span>
+                            <span class="skill-pill">PyTorch</span>
+                            <span class="skill-pill">Computer Vision</span>
+                            <span class="skill-pill">YOLO</span>
+                            <span class="skill-pill">CodeLlama</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Control System Engineering Overlay -->
+            <div class="section-anim-layer anim-control" aria-hidden="true">
+                <svg viewBox="0 0 1400 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+
+                    <!-- PID Closed-Loop Block Diagram — top left -->
+                    <g stroke="#1e40af" fill="none" opacity="0.16" stroke-width="1.5">
+                        <line x1="30" y1="90" x2="100" y2="90"/>
+                        <polygon points="98,86 108,90 98,94" fill="#1e40af" stroke="none"/>
+                        <text x="18" y="94" font-family="monospace" font-size="9" fill="#1e40af" opacity="0.9">r(t)</text>
+                        <!-- Summing junction -->
+                        <circle cx="122" cy="90" r="17"/>
+                        <text x="114" y="88" font-family="monospace" font-size="12" fill="#1e40af">+</text>
+                        <text x="114" y="101" font-family="monospace" font-size="11" fill="#1e40af">−</text>
+                        <!-- Error to PID -->
+                        <line x1="139" y1="90" x2="180" y2="90"/>
+                        <polygon points="178,86 188,90 178,94" fill="#1e40af" stroke="none"/>
+                        <!-- PID block -->
+                        <rect x="188" y="73" width="116" height="34" rx="3"/>
+                        <text x="246" y="88" font-family="monospace" font-size="8" fill="#1e40af" text-anchor="middle">Kp + Ki/s</text>
+                        <text x="246" y="100" font-family="monospace" font-size="8" fill="#1e40af" text-anchor="middle">+ Kd·s</text>
+                        <!-- PID to Plant -->
+                        <line x1="304" y1="90" x2="346" y2="90"/>
+                        <polygon points="344,86 354,90 344,94" fill="#1e40af" stroke="none"/>
+                        <!-- Plant G(s) -->
+                        <rect x="354" y="73" width="92" height="34" rx="3"/>
+                        <text x="400" y="94" font-family="monospace" font-size="11" fill="#1e40af" text-anchor="middle">G(s)</text>
+                        <!-- Output -->
+                        <line x1="446" y1="90" x2="522" y2="90"/>
+                        <polygon points="520,86 530,90 520,94" fill="#1e40af" stroke="none"/>
+                        <text x="538" y="94" font-family="monospace" font-size="9" fill="#1e40af">y(t)</text>
+                        <!-- Feedback tap -->
+                        <line x1="480" y1="90" x2="480" y2="152"/>
+                        <line x1="480" y1="152" x2="94" y2="152"/>
+                        <line x1="94" y1="152" x2="94" y2="109"/>
+                        <polygon points="90,111 94,101 98,111" fill="#1e40af" stroke="none"/>
+                        <!-- H(s) feedback block -->
+                        <rect x="260" y="135" width="82" height="30" rx="3"/>
+                        <text x="301" y="154" font-family="monospace" font-size="11" fill="#1e40af" text-anchor="middle">H(s)</text>
+                        <!-- Animated signal dot around the loop -->
+                        <circle r="5" fill="#3b82f6" opacity="0.9">
+                            <animateMotion repeatCount="indefinite" dur="5s" begin="0s"
+                                path="M30,90 L188,90 L304,90 L354,90 L446,90 L480,90 L480,152 L94,152 L94,90 L105,90"/>
+                        </circle>
+                    </g>
+
+                    <!-- Bode Plot — right side -->
+                    <g stroke="#0891b2" fill="none" opacity="0.13" stroke-width="1.2">
+                        <!-- Magnitude axes -->
+                        <line x1="1020" y1="270" x2="1375" y2="270"/>
+                        <line x1="1020" y1="148" x2="1020" y2="270"/>
+                        <text x="1013" y="151" font-family="monospace" font-size="7" fill="#0891b2" text-anchor="end" opacity="0.8">|H|dB</text>
+                        <text x="1380" y="274" font-family="monospace" font-size="7" fill="#0891b2" opacity="0.8">ω</text>
+                        <line x1="1020" y1="188" x2="1375" y2="188" stroke-dasharray="4,5" opacity="0.35"/>
+                        <line x1="1020" y1="228" x2="1375" y2="228" stroke-dasharray="4,5" opacity="0.35"/>
+                        <line x1="1120" y1="148" x2="1120" y2="270" stroke-dasharray="4,5" opacity="0.35"/>
+                        <line x1="1220" y1="148" x2="1220" y2="270" stroke-dasharray="4,5" opacity="0.35"/>
+                        <line x1="1320" y1="148" x2="1320" y2="270" stroke-dasharray="4,5" opacity="0.35"/>
+                        <!-- Magnitude curve -->
+                        <path d="M1020,160 C1080,160 1105,163 1120,172 C1155,186 1195,228 1270,260 L1375,268" stroke-width="2.5"/>
+                        <!-- -20dB/dec reference -->
+                        <line x1="1120" y1="153" x2="1375" y2="274" stroke-dasharray="5,4" stroke="#3b82f6" opacity="0.4"/>
+                        <text x="1013" y="163" font-family="monospace" font-size="6.5" fill="#0891b2" text-anchor="end" opacity="0.7">0</text>
+                        <text x="1013" y="191" font-family="monospace" font-size="6.5" fill="#0891b2" text-anchor="end" opacity="0.7">-20</text>
+                        <text x="1013" y="231" font-family="monospace" font-size="6.5" fill="#0891b2" text-anchor="end" opacity="0.7">-40</text>
+                        <!-- Phase axes -->
+                        <line x1="1020" y1="450" x2="1375" y2="450"/>
+                        <line x1="1020" y1="308" x2="1020" y2="450"/>
+                        <text x="1013" y="311" font-family="monospace" font-size="7" fill="#0891b2" text-anchor="end" opacity="0.8">∠°</text>
+                        <!-- Phase curve -->
+                        <path d="M1020,315 C1065,316 1094,320 1122,338 C1172,368 1225,418 1282,442 L1375,448" stroke-width="2.5" stroke="#0891b2"/>
+                        <text x="1013" y="318" font-family="monospace" font-size="6.5" fill="#0891b2" text-anchor="end" opacity="0.7">-45</text>
+                        <text x="1013" y="378" font-family="monospace" font-size="6.5" fill="#0891b2" text-anchor="end" opacity="0.7">-90</text>
+                        <text x="1013" y="452" font-family="monospace" font-size="6.5" fill="#0891b2" text-anchor="end" opacity="0.7">-180</text>
+                        <text x="1197" y="138" font-family="monospace" font-size="8" fill="#0891b2" text-anchor="middle" opacity="0.7">BODE PLOT</text>
+                    </g>
+
+                    <!-- Step Response — bottom left -->
+                    <g stroke="#3b82f6" fill="none" opacity="0.12" stroke-width="1.5">
+                        <line x1="50" y1="608" x2="386" y2="608"/>
+                        <line x1="50" y1="608" x2="50" y2="446"/>
+                        <line x1="50" y1="468" x2="386" y2="468" stroke-dasharray="5,5" opacity="0.45"/>
+                        <path d="M50,608 L90,608 L90,456 C96,430 108,424 117,427 C132,431 150,452 167,462 C188,472 224,468 264,467 L386,467" stroke-width="2.5"/>
+                        <!-- Overshoot annotation -->
+                        <line x1="117" y1="425" x2="117" y2="468" stroke-dasharray="3,4" opacity="0.5"/>
+                        <text x="126" y="440" font-family="monospace" font-size="7" fill="#3b82f6" opacity="0.7">Mp</text>
+                        <text x="43" y="471" font-family="monospace" font-size="7" fill="#3b82f6" text-anchor="end" opacity="0.6">1.0</text>
+                        <text x="392" y="612" font-family="monospace" font-size="7" fill="#3b82f6" opacity="0.6">t(s)</text>
+                        <text x="218" y="650" font-family="monospace" font-size="8" fill="#3b82f6" text-anchor="middle" opacity="0.7">STEP RESPONSE</text>
+                    </g>
+
+                    <!-- Transfer function text -->
+                    <text x="700" y="44" font-family="monospace" font-size="9" fill="#1e40af" text-anchor="middle" opacity="0.08">C(s)/R(s) = G(s)·H(s) / (1 + G(s)·H(s))</text>
+                    <text x="700" y="676" font-family="monospace" font-size="9" fill="#1e40af" text-anchor="middle" opacity="0.08">ζ = 0.707  |  ωn = 12 rad/s  |  Kp = 2.4  Ki = 0.8  Kd = 0.12</text>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2 class="section-title">Projects</h2>
+                    <p class="section-subtitle">A selection of hands-on projects from my portfolio</p>
+                </div>
+
+                <!-- Filter Tabs -->
+                <div class="project-filters fade-in">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="autosar">AUTOSAR</button>
+                    <button class="filter-btn" data-filter="testing">Testing</button>
+                    <button class="filter-btn" data-filter="python">Python</button>
+                    <button class="filter-btn" data-filter="embedded">Embedded</button>
+                    <button class="filter-btn" data-filter="simulation">Simulation</button>
+                    <button class="filter-btn" data-filter="devops">DevOps</button>
+                    <button class="filter-btn" data-filter="ai">AI</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid stagger-grid">
+
+                    <!-- Project 1: AUTOSAR EPS Testing -->
+                    <div class="project-card fade-in" data-category="autosar testing">
+                        <div class="project-card-header">
+                            <svg class="icon">
+                                <use href="#icon-car" />
+                            </svg>
+                        </div>
+                        <div class="project-card-body">
+                            <h3>AUTOSAR EPS Component Testing</h3>
+                            <p>Comprehensive MIL/SIL test development and validation for Electric Power Steering AUTOSAR
+                                software components following ASPICE and ISO 26262 processes.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">AUTOSAR</span>
+                                <span class="project-tag">Simulink</span>
+                                <span class="project-tag">MIL/SIL</span>
+                                <span class="project-tag">ISO 26262</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: CppUTest Unit Testing -->
+                    <div class="project-card fade-in" data-category="testing">
+                        <div class="project-card-header">
+                            <svg class="icon">
+                                <use href="#icon-test" />
+                            </svg>
+                        </div>
+                        <div class="project-card-body">
+                            <h3>C/C++ Unit Testing Framework</h3>
+                            <p>Unit and integration testing workflows using CppUTest with GDB debugging integrations,
+                                covering SWE4–SWE6 test phases for embedded automotive software.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">CppUTest</span>
+                                <span class="project-tag">GDB</span>
+                                <span class="project-tag">C/C++</span>
+                                <span class="project-tag">Eclipse</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Python GUI Tools -->
+                    <div class="project-card fade-in" data-category="python">
+                        <div class="project-card-header">
+                            <svg class="icon">
+                                <use href="#icon-layout" />
+                            </svg>
+                        </div>
+                        <div class="project-card-body">
+                            <h3>Python GUI Automation Tools</h3>
+                            <p>Desktop GUI applications for engineering workflow automation — debugging tools, data
+                                visualization, and code processing utilities built with Python.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Tkinter</span>
+                                <span class="project-tag">GUI</span>
+                                <span class="project-tag">Automation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Excel Data Pipeline -->
+                    <div class="project-card fade-in" data-category="python">
+                        <div class="project-card-header">
+                            <svg class="icon">
+                                <use href="#icon-file-spreadsheet" />
+                            </svg>
+                        </div>
+                        <div class="project-card-body">
+                            <h3>Excel Import/Export Pipeline</h3>
+                            <p>Automated Excel data processing and report generation pipelines for engineering test
+                                data, requirements tracing, and project documentation workflows.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">openpyxl</span>
+                                <span class="project-tag">pandas</span>
+                                <span class="project-tag">Excel</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Scapy CAN Testing -->
+                    <div class="project-card fade-in" data-category="python embedded">
+                        <div class="project-card-header">
+                            <svg class="icon">
+                                <use href="#icon-shield" />
+                            </svg>
+                        </div>
+                        <div class="project-card-body">
+                            <h3>Scapy CAN Bus Penetration Testing</h3>
+                            <p>Python-based CAN network security testing scripts using Scapy for automotive bus
+                                simulation, fuzzing, and vulnerability assessment.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Scapy</span>
+                                <span class="project-tag">CAN Bus</span>
+                                <span class="project-tag">Security</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: ESP32 Projects -->
+                    <div class="project-card fade-in" data-category="embedded">
+                        <div class="project-card-header">
+                            <svg class="icon">
+                                <use href="#icon-cpu" />
+                            </svg>
+                        </div>
+                        <div class="project-card-body">
+                            <h3>ESP32 Embedded Projects</h3>
+                            <p>IoT and embedded development projects on the ESP32 platform — sensor interfacing,
+                                wireless communication, and real-time control applications.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">ESP32</span>
+                                <span class="project-tag">C/C++</span>
+                                <span class="project-tag">IoT</span>
+                                <span class="project-tag">Embedded</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 7: PMSM FOC -->
+                    <div class="project-card fade-in" data-category="simulation embedded">
+                        <div class="project-card-header">
+                            <svg class="icon">
+                                <use href="#icon-zap" />
+                            </svg>
+                        </div>
+                        <div class="project-card-body">
+                            <h3>PMSM FOC Control & Simulation</h3>
+                            <p>Field-Oriented Control research and simulation for permanent magnet synchronous motors,
+                                including multi-phase IPMSM modeling and controller tuning.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">MATLAB</span>
+                                <span class="project-tag">Simulink</span>
+                                <span class="project-tag">FOC</span>
+                                <span class="project-tag">PMSM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 8: Docker Dev Environments -->
+                    <div class="project-card fade-in" data-category="devops">
+                        <div class="project-card-header">
+                            <svg class="icon">
+                                <use href="#icon-box" />
+                            </svg>
+                        </div>
+                        <div class="project-card-body">
+                            <h3>Docker Development Environments</h3>
+                            <p>Containerized development environment configurations for embedded toolchains,
+                                cross-compilation setups, and reproducible build systems.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Docker</span>
+                                <span class="project-tag">Linux</span>
+                                <span class="project-tag">CI/CD</span>
+                                <span class="project-tag">DevOps</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 9: Diagram Generation -->
+                    <div class="project-card fade-in" data-category="python devops">
+                        <div class="project-card-header">
+                            <svg class="icon">
+                                <use href="#icon-layout" />
+                            </svg>
+                        </div>
+                        <div class="project-card-body">
+                            <h3>Diagram Generation Workflows</h3>
+                            <p>Automated technical diagram generation tooling for architecture documentation, data flow
+                                visualization, and system design illustrations.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Graphviz</span>
+                                <span class="project-tag">PlantUML</span>
+                                <span class="project-tag">Automation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 10: CppUTest RAG Generator -->
+                    <div class="project-card fade-in" data-category="ai python devops">
+                        <div class="project-card-header">
+                            <svg class="icon">
+                                <use href="#icon-brain" />
+                            </svg>
+                        </div>
+                        <div class="project-card-body">
+                            <h3>CppUTest RAG Test Generator</h3>
+                            <p>AI-powered C unit test generation using CodeLlama and RAG. Full-stack tool with FastAPI,
+                                Ollama, and FAISS vector search.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">AI</span>
+                                <span class="project-tag">RAG</span>
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 11: AI Photo Tagger -->
+                    <div class="project-card fade-in" data-category="ai python">
+                        <div class="project-card-header">
+                            <svg class="icon">
+                                <use href="#icon-camera" />
+                            </svg>
+                        </div>
+                        <div class="project-card-body">
+                            <h3>AI Photo Tagger</h3>
+                            <p>Computer vision pipeline using YOLO, DeepFace, and multimodal LLMs for automated photo
+                                tagging on Synology NAS.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">AI</span>
+                                <span class="project-tag">Computer Vision</span>
+                                <span class="project-tag">PyTorch</span>
+                                <span class="project-tag">YOLO</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- AI & Local LLM Projects Section -->
+        <section class="section" id="ai-projects">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2 class="section-title">AI & Local LLM Lab</h2>
+                    <p class="section-subtitle">Passion projects exploring AI, computer vision, and large language
+                        models</p>
+                </div>
+
+                <!-- Intro paragraph -->
+                <div class="ai-intro fade-in">
+                    <div class="ai-intro-icon">
+                        <svg class="icon">
+                            <use href="#icon-brain" />
+                        </svg>
+                    </div>
+                    <p>
+                        Beyond my day job in embedded systems, I spend evenings and weekends exploring what
+                        local AI can do. Every model runs on my own hardware — an RTX 4060 with 8 GB VRAM —
+                        no cloud APIs required for inference. These projects reflect a genuine curiosity about
+                        making AI practical, private, and self-hosted.
+                    </p>
+                </div>
+
+                <!-- AI Projects Grid -->
+                <div class="ai-projects-grid">
+
+                    <!-- Project A: CppUTest RAG Generator -->
+                    <div class="ai-project-card fade-in">
+                        <div class="ai-project-card-header">
+                            <div class="ai-project-icon">
+                                <svg class="icon">
+                                    <use href="#icon-server" />
+                                </svg>
+                            </div>
+                            <div class="ai-project-label">Full-Stack AI Tool</div>
+                        </div>
+                        <div class="ai-project-card-body">
+                            <h3>CppUTest RAG Generator <span class="ai-project-version">v2.1</span></h3>
+                            <p class="ai-project-description">
+                                Auto-generates C unit tests by combining CodeLlama with a Retrieval-Augmented
+                                Generation pipeline. The system analyzes source code, retrieves relevant context
+                                via FAISS vector search, and produces CppUTest-compatible test files ready for
+                                compilation.
+                            </p>
+
+                            <div class="ai-project-architecture">
+                                <h4>Architecture</h4>
+                                <ul>
+                                    <li><strong>Backend:</strong> FastAPI serving the RAG pipeline and test generation
+                                        API</li>
+                                    <li><strong>Frontend:</strong> Nginx-hosted UI built with Tailwind CSS</li>
+                                    <li><strong>LLM Runtime:</strong> Ollama running CodeLlama for local inference</li>
+                                    <li><strong>Vector Store:</strong> FAISS for semantic code retrieval</li>
+                                    <li><strong>Database:</strong> SQLite for session and history management</li>
+                                </ul>
+                            </div>
+
+                            <div class="ai-project-features">
+                                <h4>Key Features</h4>
+                                <ul>
+                                    <li>GPU auto-detection with CUDA/CPU fallback</li>
+                                    <li>Batch processing for multi-file test generation</li>
+                                    <li>Coverage reports: LCOV, HTML, JUnit XML</li>
+                                    <li>CI/CD integration with GitLab pipelines</li>
+                                </ul>
+                            </div>
+
+                            <div class="ai-project-tech">
+                                <span class="ai-tech-pill">Python</span>
+                                <span class="ai-tech-pill">FastAPI</span>
+                                <span class="ai-tech-pill">Docker</span>
+                                <span class="ai-tech-pill">Ollama</span>
+                                <span class="ai-tech-pill">CodeLlama</span>
+                                <span class="ai-tech-pill">FAISS</span>
+                                <span class="ai-tech-pill">Tailwind CSS</span>
+                                <span class="ai-tech-pill">SQLite</span>
+                            </div>
+
+                            <a href="https://github.com/afeefkt/cpputest_rag" target="_blank" rel="noopener noreferrer"
+                                class="ai-project-link">
+                                <svg class="icon icon-sm">
+                                    <use href="#icon-github" />
+                                </svg>
+                                View on GitHub
+                                <svg class="icon icon-sm">
+                                    <use href="#icon-external" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project B: Synology AI Photo Tagger -->
+                    <div class="ai-project-card fade-in fade-in-delay-1">
+                        <div class="ai-project-card-header">
+                            <div class="ai-project-icon">
+                                <svg class="icon">
+                                    <use href="#icon-camera" />
+                                </svg>
+                            </div>
+                            <div class="ai-project-label">Computer Vision Pipeline</div>
+                        </div>
+                        <div class="ai-project-card-body">
+                            <h3>Synology AI Photo Tagger</h3>
+                            <p class="ai-project-description">
+                                Fetches photos from a Synology NAS and generates rich AI-powered tags using a
+                                pipeline of 6+ local models. Designed for bulk photo organization
+                                with intelligent categorization, face recognition, and event detection.
+                            </p>
+
+                            <div class="ai-project-architecture">
+                                <h4>Architecture</h4>
+                                <ul>
+                                    <li><strong>Object Detection:</strong> YOLO for scene and object recognition</li>
+                                    <li><strong>Face Analysis:</strong> DeepFace for clustering, emotion, age, gender
+                                    </li>
+                                    <li><strong>Image Understanding:</strong> OpenCLIP, BLIP2, LLaVA, Moondream</li>
+                                    <li><strong>GPU Runtime:</strong> All models optimized for RTX 4060 8 GB VRAM</li>
+                                    <li><strong>Storage:</strong> SQLite for tag persistence and deduplication</li>
+                                </ul>
+                            </div>
+
+                            <div class="ai-project-features">
+                                <h4>Key Features</h4>
+                                <ul>
+                                    <li>Face clustering with automatic group detection</li>
+                                    <li>Duplicate photo detection via perceptual hashing</li>
+                                    <li>Event and scene detection with temporal grouping</li>
+                                    <li>Tag normalization and confidence scoring</li>
+                                </ul>
+                            </div>
+
+                            <div class="ai-project-tech">
+                                <span class="ai-tech-pill">Python</span>
+                                <span class="ai-tech-pill">PyTorch</span>
+                                <span class="ai-tech-pill">TensorFlow</span>
+                                <span class="ai-tech-pill">transformers</span>
+                                <span class="ai-tech-pill">ultralytics</span>
+                                <span class="ai-tech-pill">deepface</span>
+                                <span class="ai-tech-pill">YOLO</span>
+                                <span class="ai-tech-pill">SQLite</span>
+                            </div>
+
+                            <a href="https://github.com/afeefkt/synology-photo-tagger" target="_blank"
+                                rel="noopener noreferrer" class="ai-project-link">
+                                <svg class="icon icon-sm">
+                                    <use href="#icon-github" />
+                                </svg>
+                                View on GitHub
+                                <svg class="icon icon-sm">
+                                    <use href="#icon-external" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Neural Network + AI Lab Overlay -->
+            <div class="section-anim-layer anim-neural" aria-hidden="true">
+                <svg viewBox="0 0 1400 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+
+                    <!-- Network connections L1→L2 (input×hidden) -->
+                    <g stroke="#7c3aed" stroke-width="0.9" opacity="0.10" fill="none">
+                        <line x1="840" y1="340" x2="980" y2="310"/>
+                        <line x1="840" y1="340" x2="980" y2="370"/>
+                        <line x1="840" y1="340" x2="980" y2="430"/>
+                        <line x1="840" y1="340" x2="980" y2="490"/>
+                        <line x1="840" y1="400" x2="980" y2="310"/>
+                        <line x1="840" y1="400" x2="980" y2="370"/>
+                        <line x1="840" y1="400" x2="980" y2="430"/>
+                        <line x1="840" y1="400" x2="980" y2="490"/>
+                        <line x1="840" y1="460" x2="980" y2="310"/>
+                        <line x1="840" y1="460" x2="980" y2="370"/>
+                        <line x1="840" y1="460" x2="980" y2="430"/>
+                        <line x1="840" y1="460" x2="980" y2="490"/>
+                        <!-- L2→L3 connections -->
+                        <line x1="980" y1="310" x2="1120" y2="340"/>
+                        <line x1="980" y1="310" x2="1120" y2="400"/>
+                        <line x1="980" y1="310" x2="1120" y2="460"/>
+                        <line x1="980" y1="370" x2="1120" y2="340"/>
+                        <line x1="980" y1="370" x2="1120" y2="400"/>
+                        <line x1="980" y1="370" x2="1120" y2="460"/>
+                        <line x1="980" y1="430" x2="1120" y2="340"/>
+                        <line x1="980" y1="430" x2="1120" y2="400"/>
+                        <line x1="980" y1="430" x2="1120" y2="460"/>
+                        <line x1="980" y1="490" x2="1120" y2="340"/>
+                        <line x1="980" y1="490" x2="1120" y2="400"/>
+                        <line x1="980" y1="490" x2="1120" y2="460"/>
+                        <!-- L3→L4 connections -->
+                        <line x1="1120" y1="340" x2="1260" y2="370"/>
+                        <line x1="1120" y1="340" x2="1260" y2="430"/>
+                        <line x1="1120" y1="400" x2="1260" y2="370"/>
+                        <line x1="1120" y1="400" x2="1260" y2="430"/>
+                        <line x1="1120" y1="460" x2="1260" y2="370"/>
+                        <line x1="1120" y1="460" x2="1260" y2="430"/>
+                    </g>
+
+                    <!-- Network nodes (filled) -->
+                    <g fill="#7c3aed" opacity="0.22">
+                        <circle cx="840" cy="340" r="9"/>
+                        <circle cx="840" cy="400" r="9"/>
+                        <circle cx="840" cy="460" r="9"/>
+                        <circle cx="980" cy="310" r="9"/>
+                        <circle cx="980" cy="370" r="9"/>
+                        <circle cx="980" cy="430" r="9"/>
+                        <circle cx="980" cy="490" r="9"/>
+                        <circle cx="1120" cy="340" r="9"/>
+                        <circle cx="1120" cy="400" r="9"/>
+                        <circle cx="1120" cy="460" r="9"/>
+                        <circle cx="1260" cy="370" r="11"/>
+                        <circle cx="1260" cy="430" r="11"/>
+                    </g>
+
+                    <!-- Pulsing node rings -->
+                    <g fill="none" stroke="#7c3aed">
+                        <circle cx="840" cy="400" r="9" opacity="0.25">
+                            <animate attributeName="r" values="9;16;9" dur="3s" repeatCount="indefinite" begin="0s"/>
+                            <animate attributeName="opacity" values="0.25;0.04;0.25" dur="3s" repeatCount="indefinite" begin="0s"/>
+                        </circle>
+                        <circle cx="980" cy="370" r="9" opacity="0.22">
+                            <animate attributeName="r" values="9;16;9" dur="3s" repeatCount="indefinite" begin="1s"/>
+                            <animate attributeName="opacity" values="0.22;0.04;0.22" dur="3s" repeatCount="indefinite" begin="1s"/>
+                        </circle>
+                        <circle cx="1120" cy="400" r="9" opacity="0.20">
+                            <animate attributeName="r" values="9;16;9" dur="3s" repeatCount="indefinite" begin="2s"/>
+                            <animate attributeName="opacity" values="0.20;0.04;0.20" dur="3s" repeatCount="indefinite" begin="2s"/>
+                        </circle>
+                        <circle cx="1260" cy="400" r="11" opacity="0.22">
+                            <animate attributeName="r" values="11;20;11" dur="3.5s" repeatCount="indefinite" begin="0.5s"/>
+                            <animate attributeName="opacity" values="0.22;0.04;0.22" dur="3.5s" repeatCount="indefinite" begin="0.5s"/>
+                        </circle>
+                    </g>
+
+                    <!-- Animated signal dots travelling the network -->
+                    <circle r="6" fill="#a855f7" opacity="0.75">
+                        <animateMotion repeatCount="indefinite" dur="3.5s" begin="0s"
+                            path="M840,400 L980,370 L1120,400 L1260,370"/>
+                    </circle>
+                    <circle r="6" fill="#8b5cf6" opacity="0.65">
+                        <animateMotion repeatCount="indefinite" dur="3.5s" begin="1.2s"
+                            path="M840,460 L980,430 L1120,460 L1260,430"/>
+                    </circle>
+                    <circle r="5" fill="#7c3aed" opacity="0.60">
+                        <animateMotion repeatCount="indefinite" dur="4.5s" begin="0.7s"
+                            path="M840,340 L980,490 L1120,340 L1260,370"/>
+                    </circle>
+
+                    <!-- Layer labels -->
+                    <g font-family="monospace" font-size="8" fill="#7c3aed" opacity="0.22" text-anchor="middle">
+                        <text x="840" y="516">INPUT</text>
+                        <text x="980" y="546">HIDDEN</text>
+                        <text x="1120" y="516">HIDDEN</text>
+                        <text x="1260" y="470">OUTPUT</text>
+                    </g>
+
+                    <!-- AI annotations left side -->
+                    <g font-family="monospace" font-size="8" fill="#7c3aed" opacity="0.13">
+                        <text x="60" y="280">FAISS vector search</text>
+                        <text x="60" y="305">CodeLlama-7B (4-bit)</text>
+                        <text x="60" y="330">RAG pipeline</text>
+                        <text x="60" y="355">Ollama runtime</text>
+                        <text x="60" y="380">RTX 4060 · 8 GB VRAM</text>
+                        <text x="60" y="420">∇L = ∂E/∂w</text>
+                        <text x="60" y="445">σ(z) = 1/(1+e⁻ᶻ)</text>
+                        <text x="60" y="470">softmax(xᵢ) = eˣⁱ/Σeˣʲ</text>
+                    </g>
+
+                    <!-- Title strip -->
+                    <text x="700" y="42" font-family="monospace" font-size="9" fill="#7c3aed" text-anchor="middle" opacity="0.09">DEEP LEARNING ─ TRANSFORMER ─ ATTENTION MECHANISM ─ BACKPROPAGATION ─ GRADIENT DESCENT</text>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section" id="education">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2 class="section-title">Education</h2>
+                    <p class="section-subtitle">Academic foundation</p>
+                </div>
+                <div class="education-card fade-in">
+                    <div class="education-icon">
+                        <svg class="icon">
+                            <use href="#icon-graduation" />
+                        </svg>
+                    </div>
+                    <h3>Bachelor of Engineering — Mechanical Engineering</h3>
+                    <p class="education-institution">MG University</p>
+                    <p class="education-year">2011 — 2015</p>
+                    <p>Focus areas: Mechatronics and control systems, engineering mathematics, and programming in C.
+                        This foundation in mechanical systems and control theory laid the groundwork for a career
+                        bridging hardware design and embedded software.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards Section -->
+        <section class="section" id="awards">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2 class="section-title">Awards</h2>
+                    <p class="section-subtitle">Recognition for outstanding contributions</p>
+                </div>
+                <div class="awards-card fade-in">
+                    <div class="awards-icon">
+                        <svg class="icon">
+                            <use href="#icon-award" />
+                        </svg>
+                    </div>
+                    <div class="awards-content">
+                        <h3>Extra Mile Award</h3>
+                        <p class="awards-issuer">TATA Elxsi Ltd.</p>
+                        <p class="awards-year">2022</p>
+                        <p>Awarded for delivering two complex and critical AUTOSAR software components ahead of
+                            schedule, demonstrating exceptional commitment and technical excellence under tight project
+                            deadlines.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-subtitle">I'm always open to discussing new opportunities and collaborations</p>
+                </div>
+                <div class="contact-grid fade-in">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>Whether you're looking for an embedded software engineer, have a project in mind, or just
+                            want to talk about motor control and AUTOSAR — feel free to reach out.</p>
+                        <div class="contact-links">
+                            <a href="mailto:afeefkt@gmail.com" class="contact-link">
+                                <svg class="icon">
+                                    <use href="#icon-email" />
+                                </svg>
+                                afeefkt@gmail.com
+                            </a>
+                            <a href="tel:+4915775715983" class="contact-link">
+                                <svg class="icon">
+                                    <use href="#icon-phone" />
+                                </svg>
+                                +49 157 7571 5983
+                            </a>
+                            <a href="https://www.linkedin.com/in/afeef-kt-76b500a4" target="_blank"
+                                rel="noopener noreferrer" class="contact-link">
+                                <svg class="icon">
+                                    <use href="#icon-linkedin" />
+                                </svg>
+                                LinkedIn Profile
+                            </a>
+                            <a href="https://github.com/afeefkt" target="_blank" rel="noopener noreferrer"
+                                class="contact-link">
+                                <svg class="icon">
+                                    <use href="#icon-github" />
+                                </svg>
+                                GitHub Profile
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-cta">
+                        <svg class="icon icon-lg" style="color: var(--color-primary); margin-bottom: var(--space-4);">
+                            <use href="#icon-email" />
+                        </svg>
+                        <p>Prefer email? Drop me a message and I'll get back to you promptly.</p>
+                        <a href="mailto:afeefkt@gmail.com" class="btn btn-primary">
+                            <svg class="icon icon-sm">
+                                <use href="#icon-email" />
+                            </svg>
+                            Send Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ====== Footer ====== -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-copy">&copy; 2026 Afeef KT. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="mailto:afeefkt@gmail.com" aria-label="Email">
+                    <svg class="icon">
+                        <use href="#icon-email" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/afeef-kt-76b500a4" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+                    <svg class="icon">
+                        <use href="#icon-linkedin" />
+                    </svg>
+                </a>
+                <a href="https://github.com/afeefkt" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg class="icon">
+                        <use href="#icon-github" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg class="icon">
+            <use href="#icon-arrow-up" />
+        </svg>
+    </button>
+
+    <script src="js/main.js?v=2"></script>
+</body>
+
+</html>
