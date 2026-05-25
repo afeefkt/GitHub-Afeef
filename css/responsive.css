@@ -137,7 +137,7 @@
     }
 
     .nav-links a {
-        display: block;
+        display: flex;
         margin: 0 var(--space-6);
         padding: var(--space-3) var(--space-4);
         font-size: var(--text-base);
