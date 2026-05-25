@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Afeef KT — Embedded Software Development Engineer. Portfolio showcasing automotive software testing, embedded systems, AUTOSAR, motor control, and Python tooling.">
-    <meta property="og:title" content="Afeef KT | Embedded Software Engineer Portfolio">
+        content="Afeef Kallanthodan — Embedded Software Development Engineer. Portfolio showcasing automotive software testing, embedded systems, AUTOSAR, motor control, and Python tooling.">
+    <meta property="og:title" content="Afeef Kallanthodan | Embedded Software Engineer Portfolio">
     <meta property="og:description"
         content="Professional portfolio covering automotive software validation, embedded systems engineering, and software tool development.">
     <meta property="og:type" content="website">
-    <title>Afeef KT | Embedded Software Engineer</title>
+    <title>Afeef Kallanthodan | Embedded Software Engineer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -226,10 +226,11 @@
     <!-- ====== Header / Navigation ====== -->
     <header class="header" id="navbar">
         <div class="container">
-            <a href="#hero" class="nav-logo">Afeef KT</a>
+            <a href="#hero" class="nav-logo">Afeef Kallanthodan</a>
             <nav>
                 <ul class="nav-links" id="nav-links">
                     <li><a href="#about">About</a></li>
+                    <li><a href="#overview">Overview</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -258,7 +259,7 @@
                     </svg>
                     <span>Regensburg, Germany</span>
                 </div>
-                <h1 class="hero-name fade-in fade-in-delay-1">Afeef KT</h1>
+                <h1 class="hero-name fade-in fade-in-delay-1">Afeef Kallanthodan</h1>
                 <p class="hero-title fade-in fade-in-delay-2">
                     <span id="typewriter">Embedded Software Development Engineer</span>
                 </p>
@@ -408,7 +409,7 @@
                     <div class="about-image-wrapper fade-in">
                         <img
                             src="assets/images/profile.png"
-                            alt="Afeef KT — Embedded Software Engineer"
+                            alt="Afeef Kallanthodan — Embedded Software Engineer"
                             class="about-image"
                             loading="lazy"
                             width="300"
@@ -474,6 +475,300 @@
                 </div>
             </div>
         </section>
+
+        <!-- ===== OVERVIEW SECTION ===== -->
+        <section class="section" id="overview">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2 class="section-title">Engineering Overview</h2>
+                    <p class="section-subtitle">Full-lifecycle coverage across Automotive &amp; Aerospace domains</p>
+                </div>
+
+                <!-- Stat Cards -->
+                <div class="overview-stats fade-in">
+                    <div class="stat-card">
+                        <span class="stat-value" data-count="8" data-suffix="+">8+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value" data-count="2" data-suffix="">2</span>
+                        <span class="stat-label">Industries</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value" data-count="5" data-suffix="">5</span>
+                        <span class="stat-label">Standards Applied</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value" data-count="5" data-suffix="">5</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                </div>
+
+                <!-- Main grid: V-Model left + Charts right -->
+                <div class="overview-grid fade-in">
+
+                    <!-- V-Model Panel -->
+                    <div class="vmodel-panel">
+                        <h3 class="overview-panel-title">V-Model Lifecycle Coverage</h3>
+                        <p class="overview-panel-sub">ISO 26262 / DO-178 / ASPICE — <span style="color:#38bdf8;font-weight:600">highlighted nodes = direct hands-on experience</span> · grey = adjacent knowledge only</p>
+                        <svg id="vmodel-svg" viewBox="0 0 800 490" xmlns="http://www.w3.org/2000/svg"
+                             role="img" aria-label="V-Model lifecycle coverage with highlighted phases showing hands-on experience"
+                             style="width:100%;max-width:800px;height:auto;display:block;margin:0 auto">
+                            <defs>
+                                <marker id="vv-arrow" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+                                    <path d="M0,0.5 L0,6.5 L6,3.5 z" fill="rgba(6,182,212,0.4)"/>
+                                </marker>
+                            </defs>
+
+                            <!-- Subtle arm labels -->
+                            <text x="152" y="415" fill="rgba(56,189,248,0.2)" font-size="10" font-family="Sora,sans-serif"
+                                  font-weight="700" letter-spacing="2.5" transform="rotate(-51 152 415)" text-anchor="middle">◀ DESIGN</text>
+                            <text x="648" y="415" fill="rgba(56,189,248,0.2)" font-size="10" font-family="Sora,sans-serif"
+                                  font-weight="700" letter-spacing="2.5" transform="rotate(51 648 415)" text-anchor="middle">TESTING ▶</text>
+
+                            <!-- Validation traceability arrows (dashed) -->
+                            <line class="vvalid" x1="80" y1="52" x2="720" y2="52" marker-end="url(#vv-arrow)"/>
+                            <line class="vvalid" x1="160" y1="150" x2="640" y2="150" marker-end="url(#vv-arrow)"/>
+                            <line class="vvalid" x1="240" y1="248" x2="560" y2="248" marker-end="url(#vv-arrow)"/>
+                            <line class="vvalid" x1="320" y1="346" x2="480" y2="346" marker-end="url(#vv-arrow)"/>
+
+                            <!-- V-model arms -->
+                            <polyline class="varm" points="80,52 160,150 240,248 320,346 400,444"/>
+                            <polyline class="varm" points="400,444 480,346 560,248 640,150 720,52"/>
+
+                            <!-- N1: System Requirements (L-top) — GREY: no direct experience -->
+                            <g class="vnode" style="animation-delay:0s">
+                                <ellipse class="vnode-glow" cx="80" cy="52" rx="74" ry="34"/>
+                                <ellipse class="vnode-bg" cx="80" cy="52" rx="68" ry="28"/>
+                                <text class="vnode-title" x="80" y="44">System</text>
+                                <text class="vnode-title" x="80" y="56">Requirements</text>
+                                <text class="vnode-company" x="80" y="70">No direct exp.</text>
+                            </g>
+
+                            <!-- N2: System Design (L-upper) — highlighted: ADA -->
+                            <g class="vnode highlighted" style="animation-delay:0.3s">
+                                <ellipse class="vnode-glow" cx="160" cy="150" rx="74" ry="34"/>
+                                <ellipse class="vnode-bg" cx="160" cy="150" rx="68" ry="28"/>
+                                <text class="vnode-title" x="160" y="142">System</text>
+                                <text class="vnode-title" x="160" y="154">Design</text>
+                                <text class="vnode-company" x="160" y="168">ADA Bangalore</text>
+                            </g>
+
+                            <!-- N3: SW Req + Architecture (L-mid) — highlighted -->
+                            <g class="vnode highlighted" style="animation-delay:0.6s">
+                                <ellipse class="vnode-glow" cx="240" cy="248" rx="74" ry="34"/>
+                                <ellipse class="vnode-bg" cx="240" cy="248" rx="68" ry="28"/>
+                                <text class="vnode-title" x="240" y="240">SW Req &amp;</text>
+                                <text class="vnode-title" x="240" y="252">Architecture</text>
+                                <text class="vnode-company" x="240" y="266">Tata Elxsi · ADA</text>
+                            </g>
+
+                            <!-- N4: Detailed Design / MMBD (L-lower) — highlighted -->
+                            <g class="vnode highlighted" style="animation-delay:0.9s">
+                                <ellipse class="vnode-glow" cx="320" cy="346" rx="74" ry="34"/>
+                                <ellipse class="vnode-bg" cx="320" cy="346" rx="68" ry="28"/>
+                                <text class="vnode-title" x="320" y="338">Detailed Design</text>
+                                <text class="vnode-title" x="320" y="350">(Manual/MBD)</text>
+                                <text class="vnode-company" x="320" y="364">Koosys · Valentum</text>
+                            </g>
+
+                            <!-- N5: Implementation (BOTTOM — apex) — highlighted -->
+                            <g class="vnode highlighted vnode-apex" style="animation-delay:1.2s">
+                                <ellipse class="vnode-glow" cx="400" cy="444" rx="84" ry="36"/>
+                                <ellipse class="vnode-bg" cx="400" cy="444" rx="78" ry="30"/>
+                                <text class="vnode-title" x="400" y="436">Implementation</text>
+                                <text class="vnode-title" x="400" y="449">C/C++ + Embedded Coder</text>
+                                <text class="vnode-company" x="400" y="464">Koosys</text>
+                            </g>
+
+                            <!-- N6: Unit Testing (R-lower) -->
+                            <g class="vnode highlighted" style="animation-delay:1.5s">
+                                <ellipse class="vnode-glow" cx="480" cy="346" rx="74" ry="34"/>
+                                <ellipse class="vnode-bg" cx="480" cy="346" rx="68" ry="28"/>
+                                <text class="vnode-title" x="480" y="338">Unit</text>
+                                <text class="vnode-title" x="480" y="350">Testing/MIL</text>
+                                <text class="vnode-company" x="480" y="364">Koosys · Valentum</text>
+                            </g>
+
+                            <!-- N7: SW Integration & Black Box Test (R-mid) — highlighted -->
+                            <g class="vnode highlighted" style="animation-delay:1.8s">
+                                <ellipse class="vnode-glow" cx="560" cy="248" rx="74" ry="34"/>
+                                <ellipse class="vnode-bg" cx="560" cy="248" rx="68" ry="28"/>
+                                <text class="vnode-title" x="560" y="240">SW Integration</text>
+                                <text class="vnode-title" x="560" y="252">&amp; Black-Box Test</text>
+                                <text class="vnode-company" x="560" y="266">Koosys · Valentum</text>
+                            </g>
+
+                            <!-- N8: System / HIL Test (R-upper) -->
+                            <g class="vnode highlighted" style="animation-delay:2.1s">
+                                <ellipse class="vnode-glow" cx="640" cy="150" rx="74" ry="34"/>
+                                <ellipse class="vnode-bg" cx="640" cy="150" rx="68" ry="28"/>
+                                <text class="vnode-title" x="640" y="142">System / HIL</text>
+                                <text class="vnode-title" x="640" y="154">Testing</text>
+                                <text class="vnode-company" x="640" y="168">Koosys</text>
+                            </g>
+
+                            <!-- N9: Acceptance / Validation (R-top) — GREY: not directly experienced -->
+                            <g class="vnode" style="animation-delay:2.4s">
+                                <ellipse class="vnode-glow" cx="720" cy="52" rx="74" ry="34"/>
+                                <ellipse class="vnode-bg" cx="720" cy="52" rx="68" ry="28"/>
+                                <text class="vnode-title" x="720" y="44">Acceptance &amp;</text>
+                                <text class="vnode-title" x="720" y="56">Validation</text>
+                                <text class="vnode-company" x="720" y="70">Adjacent knowledge</text>
+                            </g>
+                        </svg>
+                        <p class="vmodel-legend">
+                            <span class="vml-dot"></span> <span style="color:#38bdf8">Highlighted (blue)</span> = Hands-on experience
+                            &nbsp;·&nbsp; <span style="color:rgba(100,116,139,0.7)">Grey</span> = No direct exp.
+                            &nbsp;·&nbsp; ADA (Aerospace) · Tata Elxsi · Valentum · Koosys (Automotive)
+                        </p>
+                    </div><!-- /vmodel-panel -->
+
+                    <!-- Charts Panel -->
+                    <div class="charts-panel">
+
+                        <!-- Industry Split Donut -->
+                        <div class="chart-block">
+                            <h3>Industry Experience Split</h3>
+                            <p style="font-size:10px;color:rgba(255,255,255,0.3);margin:-8px 0 10px;text-transform:none;letter-spacing:0">Based on professional employment: ~8.5 years total</p>
+                            <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+                                <svg viewBox="0 0 180 180" width="160" height="160" style="flex-shrink:0;display:block">
+                                    <!-- Track -->
+                                    <circle cx="90" cy="90" r="68" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="24"/>
+                                    <!-- Automotive 54% (4.5 yrs) — sky-blue, starts at -90° -->
+                                    <circle class="donut-seg" cx="90" cy="90" r="68" fill="none" stroke="#38bdf8" stroke-width="24"
+                                        stroke-dasharray="0 427.26" data-dash="230.72 196.54"
+                                        transform="rotate(-90 90 90)" style="transition:stroke-dasharray 1.3s cubic-bezier(.4,0,.2,1)"/>
+                                    <!-- Aerospace 46% (~4 yrs) — cyan, starts at 104.4° -->
+                                    <circle class="donut-seg" cx="90" cy="90" r="68" fill="none" stroke="#06b6d4" stroke-width="24"
+                                        stroke-dasharray="0 427.26" data-dash="196.54 230.72"
+                                        transform="rotate(104.4 90 90)" style="transition:stroke-dasharray 1.5s cubic-bezier(.4,0,.2,1) 0.15s"/>
+                                    <!-- Center labels -->
+                                    <text x="90" y="82" text-anchor="middle" fill="rgba(255,255,255,0.92)"
+                                          font-size="14" font-family="Sora,sans-serif" font-weight="800">8+</text>
+                                    <text x="90" y="95" text-anchor="middle" fill="rgba(255,255,255,0.45)"
+                                          font-size="8" font-family="DM Sans,sans-serif">Yrs Industry</text>
+                                    <text x="90" y="106" text-anchor="middle" fill="rgba(255,255,255,0.3)"
+                                          font-size="7.5" font-family="DM Sans,sans-serif">Experience</text>
+                                </svg>
+                                <div class="donut-legend">
+                                    <div class="donut-legend-item">
+                                        <span class="donut-legend-dot" style="background:#38bdf8"></span>
+                                        <div>
+                                            <span>Automotive</span><br>
+                                            <strong style="color:#38bdf8;font-size:13px">54%</strong>
+                                            <span style="color:rgba(255,255,255,0.4);font-size:10px"> · 4.5 yrs</span>
+                                        </div>
+                                    </div>
+                                    <div class="donut-legend-item">
+                                        <span class="donut-legend-dot" style="background:#06b6d4"></span>
+                                        <div>
+                                            <span>Aerospace</span><br>
+                                            <strong style="color:#06b6d4;font-size:13px">46%</strong>
+                                            <span style="color:rgba(255,255,255,0.4);font-size:10px"> · ~4 yrs</span>
+                                        </div>
+                                    </div>
+                                    <p style="font-size:10px;color:rgba(255,255,255,0.25);margin:8px 0 0;line-height:1.4">
+                                        AI projects showcased<br>in the AI Lab section
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- /donut -->
+
+                        <!-- Career Timeline -->
+                        <div class="chart-block">
+                            <h3>Career Timeline</h3>
+                            <div class="timeline-row">
+                                <span class="timeline-label">ADA (Aerospace)</span>
+                                <div class="timeline-bar-wrap">
+                                    <div class="timeline-bar" data-width="100" style="background:linear-gradient(90deg,#06b6d4,#0891b2)"></div>
+                                </div>
+                                <span class="timeline-years">~4 yrs</span>
+                            </div>
+                            <div class="timeline-row">
+                                <span class="timeline-label">Tata Elxsi Ldt</span>
+                                <div class="timeline-bar-wrap">
+                                    <div class="timeline-bar" data-width="50" style="background:linear-gradient(90deg,#38bdf8,#0ea5e9)"></div>
+                                </div>
+                                <span class="timeline-years">2 yrs</span>
+                            </div>
+                            <div class="timeline-row">
+                                <span class="timeline-label">Valentum GmbH</span>
+                                <div class="timeline-bar-wrap">
+                                    <div class="timeline-bar" data-width="25" style="background:linear-gradient(90deg,#7dd3fc,#38bdf8)"></div>
+                                </div>
+                                <span class="timeline-years">1 yr</span>
+                            </div>
+                            <div class="timeline-row">
+                                <span class="timeline-label">Koosys GmbH</span>
+                                <div class="timeline-bar-wrap">
+                                    <div class="timeline-bar" data-width="38" style="background:linear-gradient(90deg,#0ea5e9,#2563eb)"></div>
+                                </div>
+                                <span class="timeline-years">1.5+ yr</span>
+                            </div>
+                            <p style="font-size:11px;color:rgba(255,255,255,0.3);margin-top:10px;margin-bottom:0">Bar width proportional to tenure · ~4 yrs = 100%</p>
+                        </div><!-- /timeline -->
+
+                    </div><!-- /charts-panel -->
+                </div><!-- /overview-grid -->
+
+                <!-- Technical Standards Radar -->
+                <div class="radar-panel fade-in">
+                    <h3 class="overview-panel-title" style="color:#38bdf8;margin-bottom:6px">Technical Standards Proficiency</h3>
+                    <p class="overview-panel-sub" style="margin-bottom:24px">Depth across key industry standards, frameworks &amp; toolchains</p>
+                    <svg id="radar-svg" viewBox="-30 10 460 380" xmlns="http://www.w3.org/2000/svg"
+                         style="width:100%;max-width:500px;height:auto;display:block;margin:0 auto">
+
+                        <!-- Grid rings (hexagonal) at 25%, 50%, 75%, 100% -->
+                        <polygon class="radar-grid" points="200,165 230.3,182.5 230.3,217.5 200,235 169.7,217.5 169.7,182.5"/>
+                        <polygon class="radar-grid" points="200,130 260.6,165 260.6,235 200,270 139.4,235 139.4,165"/>
+                        <polygon class="radar-grid" points="200,95 290.9,147.5 290.9,252.5 200,305 109.1,252.5 109.1,147.5"/>
+                        <polygon class="radar-grid" points="200,60 321.2,130 321.2,270 200,340 78.8,270 78.8,130"/>
+
+                        <!-- Axis lines (center to outer) -->
+                        <line class="radar-axis" x1="200" y1="200" x2="200" y2="60"/>
+                        <line class="radar-axis" x1="200" y1="200" x2="321.2" y2="130"/>
+                        <line class="radar-axis" x1="200" y1="200" x2="321.2" y2="270"/>
+                        <line class="radar-axis" x1="200" y1="200" x2="200" y2="340"/>
+                        <line class="radar-axis" x1="200" y1="200" x2="78.8" y2="270"/>
+                        <line class="radar-axis" x1="200" y1="200" x2="78.8" y2="130"/>
+
+                        <!-- Data polygon (AUTOSAR 85%, ISO26262 75%, ASPICE 65%, MISRA 80%, MIL Std/DO-178 70%, FuncSafety 72%) -->
+                        <polygon class="radar-data" id="radar-data-poly"
+                            points="200,200 200,200 200,200 200,200 200,200 200,200"
+                            data-points="200,81 290.9,147.5 278.8,245.5 200,312 115.1,249 112.7,149.6"/>
+
+                        <!-- Axis dot markers on data polygon -->
+                        <circle class="radar-dot" id="rdot1" cx="200" cy="200" r="4" data-cx="200" data-cy="81"/>
+                        <circle class="radar-dot" id="rdot2" cx="200" cy="200" r="4" data-cx="290.9" data-cy="147.5"/>
+                        <circle class="radar-dot" id="rdot3" cx="200" cy="200" r="4" data-cx="278.8" data-cy="245.5"/>
+                        <circle class="radar-dot" id="rdot4" cx="200" cy="200" r="4" data-cx="200" data-cy="312"/>
+                        <circle class="radar-dot" id="rdot5" cx="200" cy="200" r="4" data-cx="115.1" data-cy="249"/>
+                        <circle class="radar-dot" id="rdot6" cx="200" cy="200" r="4" data-cx="112.7" data-cy="149.6"/>
+
+                        <!-- Labels -->
+                        <text class="radar-label" x="200" y="42" text-anchor="middle">AUTOSAR Classic</text>
+                        <text class="radar-label" x="200" y="52" text-anchor="middle" style="font-size:9px;fill:rgba(56,189,248,0.6)">85%</text>
+
+                        <text class="radar-label" x="340" y="118" text-anchor="start">ISO 26262</text>
+                        <text class="radar-label" x="340" y="128" text-anchor="start" style="font-size:9px;fill:rgba(56,189,248,0.6)">75%</text>
+
+                        <text class="radar-label" x="340" y="273" text-anchor="start">ASPICE</text>
+                        <text class="radar-label" x="340" y="283" text-anchor="start" style="font-size:9px;fill:rgba(56,189,248,0.6)">65%</text>
+
+                        <text class="radar-label" x="200" y="360" text-anchor="middle">MISRA C / CERT</text>
+                        <text class="radar-label" x="200" y="370" text-anchor="middle" style="font-size:9px;fill:rgba(56,189,248,0.6)">80%</text>
+
+                        <text class="radar-label" x="60" y="273" text-anchor="end">MIL Std / DO-178</text>
+                        <text class="radar-label" x="60" y="283" text-anchor="end" style="font-size:9px;fill:rgba(56,189,248,0.6)">70%</text>
+
+                        <text class="radar-label" x="60" y="118" text-anchor="end">Functional Safety</text>
+                        <text class="radar-label" x="60" y="128" text-anchor="end" style="font-size:9px;fill:rgba(56,189,248,0.6)">72%</text>
+                    </svg>
+                </div><!-- /radar-panel -->
+
+            </div><!-- /container -->
+        </section><!-- /#overview -->
 
         <!-- Experience Section -->
         <section class="section" id="experience">
@@ -554,21 +849,34 @@
                             <h3 class="timeline-role">Model Based Design Engineer</h3>
                             <p class="timeline-company">TATA Elxsi Ltd. | Bangalore</p>
                             <ul class="timeline-duties">
-                                <li>Developed AUTOSAR-based Electric Power Steering (EPS) components using Simulink and
-                                    Stateflow</li>
-                                <li>Generated production C code, performed static model analysis with MXAM and Polyspace
-                                </li>
-                                <li>Validated software through MIL/SIL testing and ensured compliance with ASPICE, ISO
-                                    26262, MISRA C</li>
+                                <li>Developed AUTOSAR-based Electric Power Steering (EPS) software components using
+                                    MATLAB/Simulink and Stateflow</li>
+                                <li>Analyzed software requirements, estimated implementation complexity, and created
+                                    traceable model-based design artifacts</li>
+                                <li>Performed static model analysis with Model Examiner (MXAM) and maintained requirement
+                                    traceability using DOORS/DNG</li>
+                                <li>Generated C code with Embedded Coder, updated ARXML configuration, and supported
+                                    integration with AUTOSAR tooling</li>
+                                <li>Performed static code analysis with Polyspace and validated models using MIL/SIL test
+                                    vectors and procedures</li>
+                                <li>Followed V-model, ASPICE, ISO 26262, MISRA C, and MAAB guidelines in an Agile
+                                    automotive development environment</li>
                             </ul>
                             <div class="timeline-tools">
                                 <span>MATLAB/Simulink</span>
                                 <span>Stateflow</span>
-                                <span>MXAM</span>
+                                <span>Model Examiner (MXAM)</span>
                                 <span>Polyspace</span>
                                 <span>Embedded Coder</span>
-                                <span>Reactis</span>
+                                <span>DaVinci Developer</span>
+                                <span>Reactis SIL</span>
                                 <span>DOORS/DNG</span>
+                                <span>TASKING</span>
+                                <span>GHS</span>
+                                <span>RTC</span>
+                                <span>Synergy</span>
+                                <span>Git</span>
+                                <span>JIRA</span>
                                 <span>Python</span>
                             </div>
                         </div>
@@ -588,12 +896,16 @@
                             <h3 class="timeline-role">Mechanical Engineer</h3>
                             <p class="timeline-company">Aeronautical Development Agency | Bangalore</p>
                             <ul class="timeline-duties">
-                                <li>Designed geometry and optimized systems for a 5th-generation fighter aircraft
-                                    program</li>
-                                <li>Worked on aircraft subsystems including hydraulics, ECS, and electrical systems</li>
+                                <li>Worked with the inboard systems team on aircraft-level integration of electrical,
+                                    hydraulic, ECS, and LRU installations</li>
+                                <li>Reviewed system architecture inputs from system groups and internal program teams to
+                                    assess accommodation, interface, and installation feasibility</li>
+                                <li>Evaluated functional, positional, routing, size, and maintainability constraints for
+                                    system placement inside aircraft structure</li>
+                                <li>Conducted mechanism and system studies for landing gear, weapon bay, radome, and
+                                    canopy concepts using CAD and simulation workflows</li>
                                 <li>Created dynamic and load models in MATLAB/Simulink; automated weight distribution
-                                    scripting</li>
-                                <li>Conducted conceptual design studies for radome and canopy components</li>
+                                    scripting across aircraft stations and bulkheads</li>
                             </ul>
                             <div class="timeline-tools">
                                 <span>MATLAB/Simulink</span>
@@ -930,23 +1242,259 @@
                     <p class="section-subtitle">A selection of hands-on projects from my portfolio</p>
                 </div>
 
-                <!-- Filter Tabs -->
-                <div class="project-filters fade-in">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="autosar">AUTOSAR</button>
-                    <button class="filter-btn" data-filter="testing">Testing</button>
-                    <button class="filter-btn" data-filter="python">Python</button>
-                    <button class="filter-btn" data-filter="embedded">Embedded</button>
-                    <button class="filter-btn" data-filter="simulation">Simulation</button>
-                    <button class="filter-btn" data-filter="devops">DevOps</button>
-                    <button class="filter-btn" data-filter="ai">AI</button>
+                <div class="project-group fade-in">
+                    <h3 class="project-group-title">Professional Experience Highlights</h3>
+                    <p class="project-group-subtitle">Selected work aligned with company experience and public resume
+                        scope.</p>
+                    <div class="projects-grid stagger-grid">
+
+                        <!-- Professional: System Identification & Parameter Estimation -->
+                        <div class="project-card fade-in" data-category="professional koosys simulation embedded">
+                            <div class="project-card-header">
+                                <svg class="icon">
+                                    <use href="#icon-zap" />
+                                </svg>
+                            </div>
+                            <div class="project-card-body">
+                                <h3>System Identification &amp; Parameter Estimation — Real PMSM</h3>
+                                <p>Real-time bench testing of IPMSM/PMSM motor — system identification, parameter
+                                    estimation (R, Ld, Lq, flux linkage), real-time control tuning, and Model-Based
+                                    Design with automatic Embedded Coder code generation.</p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Koosys GmbH</span>
+                                    <span class="project-tag">MATLAB/Simulink</span>
+                                    <span class="project-tag">Embedded Coder</span>
+                                    <span class="project-tag">Param. Estimation</span>
+                                    <span class="project-tag">MBD</span>
+                                    <span class="project-tag">Real-Time Tuning</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Professional: 6-Phase IPMSM FOC -->
+                        <div class="project-card fade-in" data-category="professional koosys simulation embedded autosar">
+                            <div class="project-card-header">
+                                <svg class="icon">
+                                    <use href="#icon-zap" />
+                                </svg>
+                            </div>
+                            <div class="project-card-body">
+                                <h3>6-Phase IPMSM FOC Control &amp; Simulation</h3>
+                                <p>Model-based development work for 6-phase IPMSM motor control, including FOC control
+                                    logic, plant modeling, MIL evaluation, parameter tuning, and AUTOSAR code generation.</p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Koosys GmbH</span>
+                                    <span class="project-tag">MBD</span>
+                                    <span class="project-tag">Simulink</span>
+                                    <span class="project-tag">Embedded Coder</span>
+                                    <span class="project-tag">AUTOSAR</span>
+                                    <span class="project-tag">ASIL-B</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Professional: C/C++ Unit Testing -->
+                        <div class="project-card fade-in" data-category="professional valentum unit-testing">
+                            <div class="project-card-header">
+                                <svg class="icon">
+                                    <use href="#icon-test" />
+                                </svg>
+                            </div>
+                            <div class="project-card-body">
+                                <h3>C/C++ Unit Testing</h3>
+                                <p>Unit test development for embedded automotive software using TESSY and CppUTest,
+                                    aligned with SWE4 verification activities.</p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Valentum / Koosys</span>
+                                    <span class="project-tag">TESSY</span>
+                                    <span class="project-tag">CppUTest</span>
+                                    <span class="project-tag">C/C++</span>
+                                    <span class="project-tag">SWE4</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Professional: Software & System Testing -->
+                        <div class="project-card fade-in" data-category="professional valentum software-system-testing">
+                            <div class="project-card-header">
+                                <svg class="icon">
+                                    <use href="#icon-test" />
+                                </svg>
+                            </div>
+                            <div class="project-card-body">
+                                <h3>Software &amp; System Testing</h3>
+                                <p>Software and system test activities using CANoe, CAPL, Java automation, CAN simulation,
+                                    and embedded debugging support across SWE5/SWE6 workflows.</p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Valentum / Koosys</span>
+                                    <span class="project-tag">CAPL</span>
+                                    <span class="project-tag">Java</span>
+                                    <span class="project-tag">CANoe</span>
+                                    <span class="project-tag">WinIdea</span>
+                                    <span class="project-tag">SWE5/SWE6</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Professional: Integration Test Environment -->
+                        <div class="project-card fade-in" data-category="professional koosys integration-test">
+                            <div class="project-card-header">
+                                <svg class="icon">
+                                    <use href="#icon-settings" />
+                                </svg>
+                            </div>
+                            <div class="project-card-body">
+                                <h3>Integration Test Environment</h3>
+                                <p>Integration test setup, support libraries, rest bus simulation, and toolchain support
+                                    using WinIdea, CANoe, and C#.</p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Koosys GmbH</span>
+                                    <span class="project-tag">Integration Test</span>
+                                    <span class="project-tag">Rest Bus Simulation</span>
+                                    <span class="project-tag">CANoe</span>
+                                    <span class="project-tag">WinIdea</span>
+                                    <span class="project-tag">C#</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Professional: TATA Elxsi AUTOSAR EPS MBD -->
+                        <div class="project-card fade-in" data-category="professional tata autosar simulation">
+                            <div class="project-card-header">
+                                <svg class="icon">
+                                    <use href="#icon-car" />
+                                </svg>
+                            </div>
+                            <div class="project-card-body">
+                                <h3>AUTOSAR EPS Model-Based Design</h3>
+                                <p>Model-based development experience for Electric Power Steering software components,
+                                    covering requirement analysis, Simulink/Stateflow modeling, and AUTOSAR architecture
+                                    alignment.</p>
+                                <div class="project-tags">
+                                    <span class="project-tag">TATA Elxsi</span>
+                                    <span class="project-tag">AUTOSAR</span>
+                                    <span class="project-tag">EPS</span>
+                                    <span class="project-tag">Simulink</span>
+                                    <span class="project-tag">Stateflow</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Professional: TATA Elxsi MIL/SIL Validation -->
+                        <div class="project-card fade-in" data-category="professional tata testing simulation">
+                            <div class="project-card-header">
+                                <svg class="icon">
+                                    <use href="#icon-test" />
+                                </svg>
+                            </div>
+                            <div class="project-card-body">
+                                <h3>EPS MIL/SIL Validation</h3>
+                                <p>Model-in-the-loop and software-in-the-loop validation work using test vectors and
+                                    procedures to verify model behavior, generated code behavior, and requirement
+                                    coverage.</p>
+                                <div class="project-tags">
+                                    <span class="project-tag">TATA Elxsi</span>
+                                    <span class="project-tag">Model-in-Loop</span>
+                                    <span class="project-tag">Software-in-Loop</span>
+                                    <span class="project-tag">Reactis SIL</span>
+                                    <span class="project-tag">DOORS/DNG</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Professional: TATA Elxsi Code Generation & Static Analysis -->
+                        <div class="project-card fade-in" data-category="professional tata autosar testing">
+                            <div class="project-card-header">
+                                <svg class="icon">
+                                    <use href="#icon-settings" />
+                                </svg>
+                            </div>
+                            <div class="project-card-body">
+                                <h3>Code Generation &amp; Static Analysis</h3>
+                                <p>Production code generation support using Embedded Coder, ARXML updates, and static code
+                                    analysis with Polyspace as part of AUTOSAR software component development.</p>
+                                <div class="project-tags">
+                                    <span class="project-tag">TATA Elxsi</span>
+                                    <span class="project-tag">Embedded Coder</span>
+                                    <span class="project-tag">ARXML</span>
+                                    <span class="project-tag">Polyspace</span>
+                                    <span class="project-tag">DaVinci Developer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Professional: Aircraft System-Level Management -->
+                        <div class="project-card fade-in" data-category="professional ada aerospace systems">
+                            <div class="project-card-header">
+                                <svg class="icon">
+                                    <use href="#icon-layout" />
+                                </svg>
+                            </div>
+                            <div class="project-card-body">
+                                <h3>Aircraft System-Level Management</h3>
+                                <p>Professional experience coordinating aircraft system architecture inputs with inboard
+                                    accommodation, routing, functional, positional, size, and maintainability constraints.</p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Aeronautical Development Agency</span>
+                                    <span class="project-tag">Aircraft Systems</span>
+                                    <span class="project-tag">Inboard Systems</span>
+                                    <span class="project-tag">Architecture Feasibility</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Professional: Aircraft Mechanism Studies -->
+                        <div class="project-card fade-in" data-category="professional ada aerospace mechanisms">
+                            <div class="project-card-header">
+                                <svg class="icon">
+                                    <use href="#icon-settings" />
+                                </svg>
+                            </div>
+                            <div class="project-card-body">
+                                <h3>Aircraft Mechanism Studies</h3>
+                                <p>Professional mechanism study experience for weapon bay, landing gear, and canopy
+                                    opening concepts, including packaging, motion feasibility, actuator placement, and
+                                    clearance review.</p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Aeronautical Development Agency</span>
+                                    <span class="project-tag">Weapon Bay</span>
+                                    <span class="project-tag">Landing Gear</span>
+                                    <span class="project-tag">Canopy Opening</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Professional: Aerodynamic Master Geometry -->
+                        <div class="project-card fade-in" data-category="professional ada aerospace cad">
+                            <div class="project-card-header">
+                                <svg class="icon">
+                                    <use href="#icon-chart" />
+                                </svg>
+                            </div>
+                            <div class="project-card-body">
+                                <h3>Aerodynamic Master Geometry Creation</h3>
+                                <p>Professional CAD experience creating and refining aircraft numerical master geometry
+                                    for aerodynamic surfaces, stealth-oriented shaping, and downstream system packaging
+                                    studies.</p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Aeronautical Development Agency</span>
+                                    <span class="project-tag">CATIA V5</span>
+                                    <span class="project-tag">Master Geometry</span>
+                                    <span class="project-tag">Aerodynamics</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
-                <!-- Projects Grid -->
-                <div class="projects-grid stagger-grid">
+                <div class="project-group fade-in">
+                    <h3 class="project-group-title">Personal Engineering Projects</h3>
+                    <p class="project-group-subtitle">Independent tooling and experiments built outside company work.</p>
+                    <div class="projects-grid stagger-grid">
 
-                    <!-- Project: Flight Control Simulation Case Study -->
-                    <div class="project-card fade-in" data-category="simulation aerospace">
+                    <!-- Personal: Flight Control Simulation Case Study -->
+                    <div class="project-card fade-in" data-category="personal simulation aerospace">
                         <div class="project-card-header">
                             <svg class="icon">
                                 <use href="#icon-chart" />
@@ -954,26 +1502,26 @@
                         </div>
                         <div class="project-card-body">
                             <h3>Flight Control Simulation Case Study</h3>
-                            <p>6-degree-of-freedom flight dynamics model developed at Aeronautical Development Agency,
-                                Ministry of Defence, Govt. of India. Implemented aerodynamic and flight equations using
-                                MATLAB scripting and Simulink to support flight control simulation studies.</p>
+                            <p>Personal 6-degree-of-freedom flight dynamics simulation study using MATLAB and Simulink,
+                                focused on aircraft motion, response behavior, and control-system evaluation concepts.</p>
                             <div class="project-demo-video">
-                                <video autoplay muted loop playsinline preload="metadata"
+                                <video autoplay muted loop playsinline controls preload="metadata"
+                                    data-playback-rate="1.35"
                                     aria-label="Flight control simulation model preview">
                                     <source src="assets/videos/flight-control-simulation.mp4" type="video/mp4">
                                 </video>
                             </div>
                             <div class="project-tags">
-                                <span class="project-tag">6DOF</span>
-                                <span class="project-tag">Simulink</span>
+                                <span class="project-tag">Personal Project</span>
                                 <span class="project-tag">MATLAB</span>
-                                <span class="project-tag">Control Systems</span>
+                                <span class="project-tag">Simulink</span>
+                                <span class="project-tag">6DOF</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Project: Landing Gear Simscape Multibody -->
-                    <div class="project-card fade-in" data-category="simulation aerospace">
+                    <!-- Personal: Landing Gear Simscape Multibody -->
+                    <div class="project-card fade-in" data-category="personal simulation aerospace">
                         <div class="project-card-header">
                             <svg class="icon">
                                 <use href="#icon-settings" />
@@ -981,86 +1529,89 @@
                         </div>
                         <div class="project-card-body">
                             <h3>Landing Gear Simscape Multibody Model</h3>
-                            <p>Conceptual landing gear mechanism study using CATIA V5 kinematics and MATLAB Simscape
-                                Multibody. CAD geometry was imported into Simscape to evaluate linkage motion, member
-                                loads, and hydraulic actuation behavior across multiple configurations.</p>
+                            <p>Personal mechanism simulation study using CATIA V5 geometry and MATLAB Simscape
+                                Multibody to evaluate linkage motion, actuation behavior, and member load paths.</p>
                             <div class="project-demo-video">
-                                <video autoplay muted loop playsinline preload="metadata"
+                                <video autoplay muted loop playsinline controls preload="metadata"
+                                    data-playback-rate="1.35"
                                     aria-label="Landing gear Simscape multibody model preview">
                                     <source src="assets/videos/landing-gear-simscape.mp4" type="video/mp4">
                                 </video>
                             </div>
                             <div class="project-tags">
-                                <span class="project-tag">Simscape</span>
+                                <span class="project-tag">Personal Project</span>
                                 <span class="project-tag">CATIA V5</span>
+                                <span class="project-tag">Simscape</span>
                                 <span class="project-tag">Multibody</span>
-                                <span class="project-tag">Hydraulics</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Project 1: AUTOSAR EPS Testing -->
-                    <div class="project-card fade-in" data-category="autosar testing">
+                    <!-- Project 5: Scapy CAN Testing -->
+                    <div class="project-card fade-in" data-category="personal python embedded">
                         <div class="project-card-header">
                             <svg class="icon">
-                                <use href="#icon-car" />
+                                <use href="#icon-shield" />
                             </svg>
                         </div>
                         <div class="project-card-body">
-                            <h3>AUTOSAR EPS Component Testing</h3>
-                            <p>Comprehensive MIL/SIL test development and validation for Electric Power Steering AUTOSAR
-                                software components following ASPICE and ISO 26262 processes.</p>
+                            <h3>Scapy CAN Bus Security Testing</h3>
+                            <p>Python-based CAN network security testing scripts using Scapy for automotive bus
+                                simulation, fuzzing, and vulnerability assessment.</p>
                             <div class="project-tags">
-                                <span class="project-tag">AUTOSAR</span>
-                                <span class="project-tag">Simulink</span>
-                                <span class="project-tag">MIL/SIL</span>
-                                <span class="project-tag">ISO 26262</span>
+                                <span class="project-tag">Personal Project</span>
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Scapy</span>
+                                <span class="project-tag">CAN Bus</span>
+                                <span class="project-tag">Security</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Project 2: CppUTest Unit Testing -->
-                    <div class="project-card fade-in" data-category="testing">
+                    <!--
+                    Project 6: ESP32 Projects
+                    <div class="project-card fade-in" data-category="personal embedded">
                         <div class="project-card-header">
                             <svg class="icon">
-                                <use href="#icon-test" />
+                                <use href="#icon-cpu" />
                             </svg>
                         </div>
                         <div class="project-card-body">
-                            <h3>C/C++ Unit Testing Framework</h3>
-                            <p>Unit and integration testing workflows using CppUTest with GDB debugging integrations,
-                                covering SWE4–SWE6 test phases for embedded automotive software.</p>
+                            <h3>ESP32 Embedded Projects</h3>
+                            <p>IoT and embedded development projects on the ESP32 platform, including sensor
+                                interfacing, wireless communication, and real-time control applications.</p>
                             <div class="project-tags">
-                                <span class="project-tag">CppUTest</span>
-                                <span class="project-tag">GDB</span>
+                                <span class="project-tag">Personal Project</span>
+                                <span class="project-tag">ESP32</span>
                                 <span class="project-tag">C/C++</span>
-                                <span class="project-tag">Eclipse</span>
+                                <span class="project-tag">IoT</span>
                             </div>
                         </div>
                     </div>
+                    -->
 
                     <!-- Project 3: Python GUI Tools -->
-                    <div class="project-card fade-in" data-category="python">
+                    <div class="project-card fade-in" data-category="personal python">
                         <div class="project-card-header">
                             <svg class="icon">
                                 <use href="#icon-layout" />
                             </svg>
                         </div>
                         <div class="project-card-body">
-                            <h3>Python GUI Automation Tools</h3>
-                            <p>Desktop GUI applications for engineering workflow automation — debugging tools, data
+                            <h3>Python Automation Tools</h3>
+                            <p>Desktop applications for engineering workflow automation — debugging tools, data
                                 visualization, and code processing utilities built with Python.</p>
                             <div class="project-tags">
+                                <span class="project-tag">Personal Project</span>
                                 <span class="project-tag">Python</span>
                                 <span class="project-tag">Tkinter</span>
-                                <span class="project-tag">GUI</span>
                                 <span class="project-tag">Automation</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project 4: Excel Data Pipeline -->
-                    <div class="project-card fade-in" data-category="python">
+                    <div class="project-card fade-in" data-category="personal python">
                         <div class="project-card-header">
                             <svg class="icon">
                                 <use href="#icon-file-spreadsheet" />
@@ -1071,76 +1622,16 @@
                             <p>Automated Excel data processing and report generation pipelines for engineering test
                                 data, requirements tracing, and project documentation workflows.</p>
                             <div class="project-tags">
+                                <span class="project-tag">Personal Project</span>
                                 <span class="project-tag">Python</span>
                                 <span class="project-tag">openpyxl</span>
                                 <span class="project-tag">pandas</span>
-                                <span class="project-tag">Excel</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 5: Scapy CAN Testing -->
-                    <div class="project-card fade-in" data-category="python embedded">
-                        <div class="project-card-header">
-                            <svg class="icon">
-                                <use href="#icon-shield" />
-                            </svg>
-                        </div>
-                        <div class="project-card-body">
-                            <h3>Scapy CAN Bus Penetration Testing</h3>
-                            <p>Python-based CAN network security testing scripts using Scapy for automotive bus
-                                simulation, fuzzing, and vulnerability assessment.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">Python</span>
-                                <span class="project-tag">Scapy</span>
-                                <span class="project-tag">CAN Bus</span>
-                                <span class="project-tag">Security</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 6: ESP32 Projects -->
-                    <div class="project-card fade-in" data-category="embedded">
-                        <div class="project-card-header">
-                            <svg class="icon">
-                                <use href="#icon-cpu" />
-                            </svg>
-                        </div>
-                        <div class="project-card-body">
-                            <h3>ESP32 Embedded Projects</h3>
-                            <p>IoT and embedded development projects on the ESP32 platform — sensor interfacing,
-                                wireless communication, and real-time control applications.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">ESP32</span>
-                                <span class="project-tag">C/C++</span>
-                                <span class="project-tag">IoT</span>
-                                <span class="project-tag">Embedded</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 7: PMSM FOC -->
-                    <div class="project-card fade-in" data-category="simulation embedded">
-                        <div class="project-card-header">
-                            <svg class="icon">
-                                <use href="#icon-zap" />
-                            </svg>
-                        </div>
-                        <div class="project-card-body">
-                            <h3>PMSM FOC Control & Simulation</h3>
-                            <p>Field-Oriented Control research and simulation for permanent magnet synchronous motors,
-                                including multi-phase IPMSM modeling and controller tuning.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">MATLAB</span>
-                                <span class="project-tag">Simulink</span>
-                                <span class="project-tag">FOC</span>
-                                <span class="project-tag">PMSM</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project 8: Docker Dev Environments -->
-                    <div class="project-card fade-in" data-category="devops">
+                    <div class="project-card fade-in" data-category="personal devops">
                         <div class="project-card-header">
                             <svg class="icon">
                                 <use href="#icon-box" />
@@ -1151,75 +1642,16 @@
                             <p>Containerized development environment configurations for embedded toolchains,
                                 cross-compilation setups, and reproducible build systems.</p>
                             <div class="project-tags">
+                                <span class="project-tag">Personal Project</span>
                                 <span class="project-tag">Docker</span>
                                 <span class="project-tag">Linux</span>
-                                <span class="project-tag">CI/CD</span>
                                 <span class="project-tag">DevOps</span>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Project 9: Diagram Generation -->
-                    <div class="project-card fade-in" data-category="python devops">
-                        <div class="project-card-header">
-                            <svg class="icon">
-                                <use href="#icon-layout" />
-                            </svg>
-                        </div>
-                        <div class="project-card-body">
-                            <h3>Diagram Generation Workflows</h3>
-                            <p>Automated technical diagram generation tooling for architecture documentation, data flow
-                                visualization, and system design illustrations.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">Python</span>
-                                <span class="project-tag">Graphviz</span>
-                                <span class="project-tag">PlantUML</span>
-                                <span class="project-tag">Automation</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 10: CppUTest RAG Generator -->
-                    <div class="project-card fade-in" data-category="ai python devops">
-                        <div class="project-card-header">
-                            <svg class="icon">
-                                <use href="#icon-brain" />
-                            </svg>
-                        </div>
-                        <div class="project-card-body">
-                            <h3>CppUTest RAG Test Generator</h3>
-                            <p>AI-powered C unit test generation using CodeLlama and RAG. Full-stack tool with FastAPI,
-                                Ollama, and FAISS vector search.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">AI</span>
-                                <span class="project-tag">RAG</span>
-                                <span class="project-tag">Python</span>
-                                <span class="project-tag">Docker</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 11: AI Photo Tagger -->
-                    <div class="project-card fade-in" data-category="ai python">
-                        <div class="project-card-header">
-                            <svg class="icon">
-                                <use href="#icon-camera" />
-                            </svg>
-                        </div>
-                        <div class="project-card-body">
-                            <h3>AI Photo Tagger</h3>
-                            <p>Computer vision pipeline using YOLO, DeepFace, and multimodal LLMs for automated photo
-                                tagging on Synology NAS.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">AI</span>
-                                <span class="project-tag">Computer Vision</span>
-                                <span class="project-tag">PyTorch</span>
-                                <span class="project-tag">YOLO</span>
-                            </div>
-                        </div>
-                    </div>
+                    </div>                   
 
                 </div>
+            </div>
             </div>
         </section>
 
@@ -1292,6 +1724,7 @@
                             </div>
 
                             <div class="ai-project-tech">
+                                <span class="ai-tech-pill">Personal AI Lab</span>
                                 <span class="ai-tech-pill">Python</span>
                                 <span class="ai-tech-pill">FastAPI</span>
                                 <span class="ai-tech-pill">Docker</span>
@@ -1356,6 +1789,7 @@
                             </div>
 
                             <div class="ai-project-tech">
+                                <span class="ai-tech-pill">Personal AI Lab</span>
                                 <span class="ai-tech-pill">Python</span>
                                 <span class="ai-tech-pill">PyTorch</span>
                                 <span class="ai-tech-pill">TensorFlow</span>
@@ -1607,7 +2041,7 @@
     <!-- ====== Footer ====== -->
     <footer class="footer">
         <div class="container">
-            <p class="footer-copy">&copy; 2026 Afeef KT. All rights reserved.</p>
+            <p class="footer-copy">&copy; 2026 Afeef Kallanthodan. All rights reserved.</p>
             <div class="footer-links">
                 <a href="mailto:afeefkt@gmail.com" aria-label="Email">
                     <svg class="icon">
@@ -1640,3 +2074,5 @@
 </body>
 
 </html>
+
+

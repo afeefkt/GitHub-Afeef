@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Design System & Styles — Afeef KT Portfolio
+   Design System & Styles — Afeef Kallanthodan Portfolio
    ========================================================================== */
 
 /* --- CSS Custom Properties (Design Tokens) --- */
@@ -1235,34 +1235,25 @@ button {
 /* ==========================================================================
    Projects Section
    ========================================================================== */
-.project-filters {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: var(--space-2);
-    margin-bottom: var(--space-10);
+.project-group {
+    margin-bottom: var(--space-14);
 }
 
-.filter-btn {
-    padding: var(--space-2) var(--space-4);
-    font-size: var(--text-sm);
-    font-weight: var(--font-medium);
+.project-group:last-child {
+    margin-bottom: 0;
+}
+
+.project-group-title {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-semibold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-2);
+}
+
+.project-group-subtitle {
+    max-width: 680px;
     color: var(--color-text-secondary);
-    background-color: var(--color-bg-tertiary);
-    border: 1px solid var(--color-border);
-    border-radius: 9999px;
-    transition: all var(--transition-fast);
-}
-
-.filter-btn:hover {
-    border-color: var(--color-primary-light);
-    color: var(--color-primary);
-}
-
-.filter-btn.active {
-    background-color: var(--color-primary);
-    color: #ffffff;
-    border-color: var(--color-primary);
+    margin-bottom: var(--space-6);
 }
 
 .projects-grid {
@@ -1934,3 +1925,331 @@ button {
 /* Projects — FOC motor control background */
 
 /* AI Lab — PCB circuit board (reinforces embedded-meets-AI theme) */
+
+/* ===================================================================
+   OVERVIEW SECTION — V-Model, Charts, Radar, Stat Cards
+   =================================================================== */
+
+#overview {
+    background: linear-gradient(180deg, #f0f7ff 0%, #e6f0fb 100%);
+}
+
+/* --- Stat Cards --- */
+.overview-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-4);
+    margin-bottom: var(--space-10);
+}
+
+.stat-card {
+    background: rgba(15, 23, 42, 0.82);
+    border: 1px solid rgba(56, 189, 248, 0.28);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6) var(--space-4);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(56, 189, 248, 0.15);
+}
+
+.stat-card .stat-value {
+    font-family: var(--font-heading);
+    font-size: var(--text-4xl);
+    font-weight: 800;
+    color: #38bdf8;
+    display: block;
+    line-height: 1;
+    margin-bottom: var(--space-2);
+}
+
+.stat-card .stat-label {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: var(--text-sm);
+    font-weight: 500;
+}
+
+/* --- Main Overview Grid --- */
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1.45fr 1fr;
+    gap: var(--space-8);
+    align-items: start;
+    margin-bottom: var(--space-8);
+}
+
+.vmodel-panel,
+.charts-panel {
+    width: 100%;
+}
+
+.charts-panel {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+.overview-panel-title {
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: #38bdf8;
+    margin-bottom: var(--space-1);
+}
+
+.overview-panel-sub {
+    font-size: var(--text-sm);
+    color: rgba(30, 41, 59, 0.65);
+    margin-bottom: var(--space-4);
+    line-height: 1.5;
+}
+
+/* --- Chart Blocks (donut, timeline) --- */
+.chart-block {
+    background: rgba(15, 23, 42, 0.85);
+    border: 1px solid rgba(56, 189, 248, 0.22);
+    border-radius: var(--radius-lg);
+    padding: var(--space-5) var(--space-5) var(--space-4);
+    transition: border-color var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.chart-block:hover {
+    border-color: rgba(56, 189, 248, 0.45);
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.08);
+}
+
+.chart-block h3 {
+    font-family: var(--font-heading);
+    color: #38bdf8;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: var(--space-4);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* --- Donut Legend --- */
+.donut-legend {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.donut-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: var(--text-sm);
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.donut-legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* --- Career Timeline Bars --- */
+.timeline-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-3);
+}
+
+.timeline-label {
+    width: 116px;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.65);
+    flex-shrink: 0;
+    text-align: right;
+}
+
+.timeline-bar-wrap {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 4px;
+    height: 16px;
+    overflow: hidden;
+}
+
+.timeline-bar {
+    height: 100%;
+    border-radius: 4px;
+    width: 0;
+    transition: width 1.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timeline-years {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.4);
+    width: 42px;
+    flex-shrink: 0;
+}
+
+/* --- Radar Panel --- */
+.radar-panel {
+    background: rgba(15, 23, 42, 0.85);
+    border: 1px solid rgba(56, 189, 248, 0.22);
+    border-radius: var(--radius-lg);
+    padding: var(--space-8) var(--space-6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#radar-svg .radar-grid {
+    fill: none;
+    stroke: rgba(56, 189, 248, 0.13);
+    stroke-width: 1;
+}
+
+#radar-svg .radar-axis {
+    stroke: rgba(56, 189, 248, 0.18);
+    stroke-width: 1;
+}
+
+#radar-svg .radar-data {
+    fill: rgba(56, 189, 248, 0.12);
+    stroke: #38bdf8;
+    stroke-width: 2;
+    transition: points 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#radar-svg .radar-dot {
+    fill: #38bdf8;
+    stroke: rgba(56, 189, 248, 0.4);
+    stroke-width: 2;
+    transition: cx 1.2s cubic-bezier(0.4, 0, 0.2, 1), cy 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#radar-svg .radar-label {
+    fill: rgba(255, 255, 255, 0.78);
+    font-size: 11px;
+    font-family: var(--font-primary), sans-serif;
+    dominant-baseline: middle;
+}
+
+/* --- V-Model SVG Styles --- */
+#vmodel-svg .varm {
+    stroke: rgba(56, 189, 248, 0.38);
+    stroke-width: 2;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+#vmodel-svg .vvalid {
+    stroke: rgba(6, 182, 212, 0.28);
+    stroke-width: 1.5;
+    stroke-dasharray: 7 5;
+    fill: none;
+}
+
+#vmodel-svg .vnode-glow {
+    fill: rgba(6, 182, 212, 0.18);
+}
+
+#vmodel-svg .vnode-bg {
+    fill: rgba(15, 23, 42, 0.9);
+    stroke: rgba(56, 189, 248, 0.35);
+    stroke-width: 1.5;
+}
+
+#vmodel-svg .vnode.highlighted .vnode-glow {
+    fill: rgba(56, 189, 248, 0.22);
+}
+
+#vmodel-svg .vnode.highlighted .vnode-bg {
+    fill: rgba(15, 36, 80, 0.92);
+    stroke: #38bdf8;
+    stroke-width: 2.5;
+}
+
+#vmodel-svg .vnode-apex.highlighted .vnode-bg {
+    fill: rgba(8, 47, 107, 0.95);
+    stroke: #0ea5e9;
+    stroke-width: 3;
+}
+
+#vmodel-svg .vnode-title {
+    fill: rgba(255, 255, 255, 0.55);
+    font-size: 10.5px;
+    font-family: var(--font-heading), sans-serif;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+#vmodel-svg .vnode.highlighted .vnode-title {
+    fill: rgba(255, 255, 255, 0.95);
+}
+
+#vmodel-svg .vnode-company {
+    fill: #38bdf8;
+    font-size: 8.5px;
+    font-family: var(--font-primary), sans-serif;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+#vmodel-svg .vnode-apex .vnode-company {
+    fill: #7dd3fc;
+}
+
+@keyframes vnode-pulse {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.70; }
+}
+
+#vmodel-svg .vnode.highlighted {
+    animation: vnode-pulse 3.2s ease-in-out infinite;
+}
+
+/* Apex node gets a slightly different pulse */
+#vmodel-svg .vnode-apex.highlighted {
+    animation: vnode-pulse 2.5s ease-in-out infinite;
+}
+
+/* Grey / inactive nodes (no direct experience) */
+#vmodel-svg .vnode:not(.highlighted) .vnode-glow {
+    fill: rgba(30, 41, 59, 0.25);
+}
+
+#vmodel-svg .vnode:not(.highlighted) .vnode-bg {
+    fill: rgba(20, 28, 48, 0.65);
+    stroke: rgba(100, 116, 139, 0.28);
+    stroke-width: 1;
+}
+
+#vmodel-svg .vnode:not(.highlighted) .vnode-title {
+    fill: rgba(100, 116, 139, 0.55);
+}
+
+#vmodel-svg .vnode:not(.highlighted) .vnode-company {
+    fill: rgba(100, 116, 139, 0.4);
+}
+
+/* V-model legend bar */
+.vmodel-legend {
+    font-size: 11px;
+    color: rgba(30, 41, 59, 0.5);
+    margin-top: var(--space-3);
+    text-align: center;
+}
+
+.vml-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #38bdf8;
+    vertical-align: middle;
+    margin-right: 4px;
+}

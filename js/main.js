@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Main JavaScript — Afeef KT Portfolio
+   Main JavaScript — Afeef Kallanthodan Portfolio
    ========================================================================== */
 
 (function () {
@@ -10,10 +10,19 @@
     const hamburger = document.getElementById('nav-hamburger');
     const navLinks = document.getElementById('nav-links');
     const backToTop = document.getElementById('back-to-top');
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
     const sections = document.querySelectorAll('.section');
     const navAnchors = navLinks.querySelectorAll('a');
+    const demoVideos = document.querySelectorAll('.project-demo-video video');
+
+    // --- Project Demo Videos ---
+    demoVideos.forEach(function (video) {
+        var playbackRate = parseFloat(video.getAttribute('data-playback-rate')) || 1;
+        video.playbackRate = playbackRate;
+
+        video.addEventListener('loadedmetadata', function () {
+            video.playbackRate = playbackRate;
+        });
+    });
 
     // --- Mobile Navigation Toggle ---
     hamburger.addEventListener('click', function () {
@@ -158,37 +167,6 @@
         });
     })();
 
-    // --- Project Category Filter ---
-    filterBtns.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-            var filter = this.getAttribute('data-filter');
-
-            // Update active button
-            filterBtns.forEach(function (b) {
-                b.classList.remove('active');
-            });
-            this.classList.add('active');
-
-            // Filter cards
-            projectCards.forEach(function (card) {
-                var categories = card.getAttribute('data-category') || '';
-                if (filter === 'all' || categories.indexOf(filter) !== -1) {
-                    card.classList.remove('hidden');
-                    // Re-trigger fade-in
-                    card.style.opacity = '0';
-                    card.style.transform = 'translateY(10px)';
-                    requestAnimationFrame(function () {
-                        card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-                        card.style.opacity = '1';
-                        card.style.transform = 'translateY(0)';
-                    });
-                } else {
-                    card.classList.add('hidden');
-                }
-            });
-        });
-    });
-
     // --- Trigger initial scroll check ---
     onScroll();
 
@@ -305,11 +283,92 @@
         Array.from(children).forEach((child, index) => {
             child.classList.add('fade-in');
             // Cycle delays: 100, 200, 300, 100...
-            const delay = ((index % 5) + 1) * 100; 
+            const delay = ((index % 5) + 1) * 100;
             child.classList.add(`delay-${delay}`);
             // Observe the child
             fadeObserver.observe(child);
         });
     });
+
+// ===== OVERVIEW SECTION CHARTS =====
+(function () {
+    'use strict';
+
+    // --- Count-up animation ---
+    function animateCount(el, target, duration) {
+        var start = 0;
+        var step = target / (duration / 16);
+        var suffix = el.dataset.suffix || '';
+        function tick() {
+            start = Math.min(start + step, target);
+            el.textContent = Math.floor(start) + suffix;
+            if (start < target) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+    }
+
+    // --- Reveal timeline bars ---
+    function revealTimeline() {
+        var bars = document.querySelectorAll('.timeline-bar[data-width]');
+        bars.forEach(function (bar) {
+            // Small stagger per row
+            var row = bar.closest('.timeline-row');
+            var idx = row ? Array.from(row.parentNode.children).indexOf(row) : 0;
+            setTimeout(function () {
+                bar.style.width = bar.dataset.width + '%';
+            }, idx * 120);
+        });
+    }
+
+    // --- Reveal donut segments ---
+    function revealDonut() {
+        var segs = document.querySelectorAll('.donut-seg[data-dash]');
+        segs.forEach(function (seg, i) {
+            setTimeout(function () {
+                seg.style.strokeDasharray = seg.dataset.dash;
+            }, i * 80);
+        });
+    }
+
+    // --- Reveal radar polygon ---
+    function revealRadar() {
+        var poly = document.getElementById('radar-data-poly');
+        if (poly && poly.dataset.points) {
+            setTimeout(function () {
+                poly.setAttribute('points', poly.dataset.points);
+            }, 200);
+        }
+        // Animate dots to their final positions
+        var dots = document.querySelectorAll('.radar-dot[data-cx]');
+        dots.forEach(function (dot, i) {
+            setTimeout(function () {
+                dot.setAttribute('cx', dot.dataset.cx);
+                dot.setAttribute('cy', dot.dataset.cy);
+            }, 200 + i * 60);
+        });
+    }
+
+    // --- IntersectionObserver for #overview ---
+    var overviewSection = document.getElementById('overview');
+    if (overviewSection) {
+        var triggered = false;
+        var obs = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting && !triggered) {
+                    triggered = true;
+                    // Stat counters
+                    var statEls = overviewSection.querySelectorAll('.stat-value[data-count]');
+                    statEls.forEach(function (el) {
+                        animateCount(el, parseInt(el.dataset.count, 10), 1800);
+                    });
+                    revealTimeline();
+                    revealDonut();
+                    revealRadar();
+                }
+            });
+        }, { threshold: 0.15 });
+        obs.observe(overviewSection);
+    }
+}());
 
 })();

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Responsive Styles — Afeef KT Portfolio
+   Responsive Styles — Afeef Kallanthodan Portfolio
    ========================================================================== */
 
 /* --- Tablet: 768px — 1023px --- */
@@ -75,6 +75,15 @@
 
 /* --- Mobile: up to 767px --- */
 @media (max-width: 767px) {
+    /* Overview Section */
+    .overview-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .overview-grid {
+        grid-template-columns: 1fr;
+    }
+
     .section {
         padding: var(--space-16) 0;
     }
@@ -231,10 +240,6 @@
         grid-template-columns: 1fr;
     }
 
-    .project-filters {
-        gap: var(--space-2);
-    }
-
     /* AI Projects */
     .ai-projects-grid {
         grid-template-columns: 1fr;
@@ -273,6 +278,25 @@
 
 /* --- Small Mobile: up to 479px --- */
 @media (max-width: 479px) {
+    /* Overview Section */
+    .overview-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-3);
+    }
+
+    .stat-card .stat-value {
+        font-size: var(--text-3xl);
+    }
+
+    .timeline-label {
+        width: 80px;
+        font-size: 10px;
+    }
+
+    .radar-panel {
+        padding: var(--space-5) var(--space-4);
+    }
+
     .container {
         padding: 0 var(--space-4);
     }
