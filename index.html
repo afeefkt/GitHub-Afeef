@@ -1759,6 +1759,135 @@
                         </div>
                     </div>
 
+
+                    <!-- Project B: agentic-sysmodel -->
+                    <div class="ai-project-card fade-in fade-in-delay-1">
+                        <div class="ai-project-card-header">
+                            <div class="ai-project-icon">
+                                <svg class="icon">
+                                    <use href="#icon-settings" />
+                                </svg>
+                            </div>
+                            <div class="ai-project-label">Agentic AI Pipeline</div>
+                        </div>
+                        <div class="ai-project-card-body">
+                            <h3>Agentic System Modeler</h3>
+                            <p class="ai-project-description">
+                                A local-first AI pipeline that takes automotive software requirements and generates
+                                module designs, C code skeletons, and CppUTest unit tests — with full traceability,
+                                a Streamlit UI, and an optional AI agent layer.
+                            </p>
+
+                            <div class="ai-project-architecture">
+                                <h4>Architecture</h4>
+                                <ul>
+                                    <li><strong>LLM Runtime:</strong> Ollama by default; cloud models optional (OpenRouter, DeepSeek, Google)</li>
+                                    <li><strong>Frontend:</strong> Streamlit web app running in WSL</li>
+                                    <li><strong>Agent:</strong> OpenCode agent with a locked-down CLI tool interface</li>
+                                    <li><strong>Build:</strong> gcc / make / CppUTest / lcov in WSL</li>
+                                </ul>
+                            </div>
+
+                            <div class="ai-project-features">
+                                <h4>Key Features</h4>
+                                <ul>
+                                    <li>Requirements import (CSV, Excel, ReqIF, DOORS/Polarion exports)</li>
+                                    <li>Module design spec + Mermaid activity flow diagrams</li>
+                                    <li>Auto-compiled C code with stub/fix loop</li>
+                                    <li>Requirement ↔ test traceability table and run report</li>
+                                </ul>
+                            </div>
+
+                            <div class="ai-project-tech">
+                                <span class="ai-tech-pill">Personal AI Lab</span>
+                                <span class="ai-tech-pill">Python</span>
+                                <span class="ai-tech-pill">Streamlit</span>
+                                <span class="ai-tech-pill">Ollama</span>
+                                <span class="ai-tech-pill">Agentic Workflows</span>
+                                <span class="ai-tech-pill">CppUTest</span>
+                                <span class="ai-tech-pill">Mermaid</span>
+                                <span class="ai-tech-pill">WSL</span>
+                            </div>
+
+                            <a href="https://github.com/afeefkt/agentic-sysmodel" target="_blank" rel="noopener noreferrer"
+                                class="ai-project-link">
+                                <svg class="icon icon-sm">
+                                    <use href="#icon-github" />
+                                </svg>
+                                View on GitHub
+                                <svg class="icon icon-sm">
+                                    <use href="#icon-external" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project C: MUD_MUT -->
+                    <div class="ai-project-card fade-in fade-in-delay-2">
+                        <div class="ai-project-card-header">
+                            <div class="ai-project-icon">
+                                <svg class="icon">
+                                    <use href="#icon-test" />
+                                </svg>
+                            </div>
+                            <div class="ai-project-label">Requirements → Tests Pipeline</div>
+                        </div>
+                        <div class="ai-project-card-body">
+                            <h3>MUD_MUT</h3>
+                            <p class="ai-project-description">
+                                Local-first AI pipeline that turns automotive requirements into module designs,
+                                C code and CppUTest unit tests — with traceability, a Streamlit UI, and an
+                                optional AI agent. Built as a learning project to explore how far small local
+                                models can automate safety-oriented software engineering.
+                            </p>
+
+                            <div class="ai-project-architecture">
+                                <h4>Architecture</h4>
+                                <ul>
+                                    <li><strong>Pipeline:</strong> Import → Plan → Spec → Compilable C → Tests → Build → Trace → Report</li>
+                                    <li><strong>RAG:</strong> FAISS-backed example-test retrieval for CppUTest generation</li>
+                                    <li><strong>Models:</strong> Ollama (local 7–8B); cloud via OpenRouter, NVIDIA NIM, DeepSeek, Google</li>
+                                    <li><strong>Honesty:</strong> partial verdicts when only fallback smoke-tests pass; all model calls logged</li>
+                                </ul>
+                            </div>
+
+                            <div class="ai-project-features">
+                                <h4>Key Features</h4>
+                                <ul>
+                                    <li>Tolerant importer: CSV, Excel, ReqIF, DOORS/Polarion/Jira exports</li>
+                                    <li>Full chain in one click — live progress bar with stage and time estimate</li>
+                                    <li>AI monitor showing every model request and response</li>
+                                    <li>Run comparison, ZIP download, coverage report served in-app</li>
+                                </ul>
+                            </div>
+
+                            <div class="ai-project-tech">
+                                <span class="ai-tech-pill">Personal AI Lab</span>
+                                <span class="ai-tech-pill">Python</span>
+                                <span class="ai-tech-pill">Streamlit</span>
+                                <span class="ai-tech-pill">Ollama</span>
+                                <span class="ai-tech-pill">Agentic Workflows</span>
+                                <span class="ai-tech-pill">FAISS</span>
+                                <span class="ai-tech-pill">CppUTest</span>
+                                <span class="ai-tech-pill">AUTOSAR</span>
+                                <span class="ai-tech-pill">ASPICE</span>
+                                <span class="ai-tech-pill">Mermaid</span>
+                                <span class="ai-tech-pill">WSL</span>
+                            </div>
+
+                            <a href="https://github.com/afeefkt/ModuleUnit_DesignAndTest" target="_blank" rel="noopener noreferrer"
+                                class="ai-project-link">
+                                <svg class="icon icon-sm">
+                                    <use href="#icon-github" />
+                                </svg>
+                                View on GitHub
+                                <svg class="icon icon-sm">
+                                    <use href="#icon-external" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <!-- Neural Network + AI Lab Overlay -->
