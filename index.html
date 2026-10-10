@@ -1141,8 +1141,6 @@
                             <span class="skill-pill">Agentic Workflows (API)</span>
                             <span class="skill-pill">Ollama</span>
                             <span class="skill-pill">PyTorch</span>
-                            <span class="skill-pill">Computer Vision</span>
-                            <span class="skill-pill">YOLO</span>
                             <span class="skill-pill">CodeLlama</span>
                         </div>
                     </div>
@@ -1768,45 +1766,48 @@
                                     <use href="#icon-settings" />
                                 </svg>
                             </div>
-                            <div class="ai-project-label">Agentic AI Pipeline</div>
+                            <div class="ai-project-label">Multi-Agent AI Workflow</div>
                         </div>
                         <div class="ai-project-card-body">
                             <h3>Agentic System Modeler</h3>
                             <p class="ai-project-description">
-                                A local-first AI pipeline that takes automotive software requirements and generates
-                                module designs, C code skeletons, and CppUTest unit tests — with full traceability,
-                                a Streamlit UI, and an optional AI agent layer.
+                                A multi-agent workflow that turns an engineering need into a verified physical
+                                system model: requirements → architecture → CAD (FreeCAD) → acausal Modelica
+                                (OpenModelica) → simulation → requirement-driven verification → design sizing.
+                                Built on opencode + MCP with DeepSeek models.
                             </p>
 
                             <div class="ai-project-architecture">
-                                <h4>Architecture</h4>
+                                <h4>Agent Architecture</h4>
                                 <ul>
-                                    <li><strong>LLM Runtime:</strong> Ollama by default; cloud models optional (OpenRouter, DeepSeek, Google)</li>
-                                    <li><strong>Frontend:</strong> Streamlit web app running in WSL</li>
-                                    <li><strong>Agent:</strong> OpenCode agent with a locked-down CLI tool interface</li>
-                                    <li><strong>Build:</strong> gcc / make / CppUTest / lcov in WSL</li>
+                                    <li><strong>Specialist Agents:</strong> req-engineer, cad-designer, modelica-modeler, control-expert, sim-verifier, data-analyst</li>
+                                    <li><strong>OpenModelica MCP:</strong> 19 tools — build, simulate, library search, CAD→Modelica, control analysis, results export</li>
+                                    <li><strong>Independent V&V:</strong> verifier agent can't edit models — runs cases and issues PASS/FAIL from tool calls only</li>
+                                    <li><strong>Runtime:</strong> opencode + DeepSeek API; WSL2 Ubuntu + OpenModelica (omc)</li>
                                 </ul>
                             </div>
 
                             <div class="ai-project-features">
                                 <h4>Key Features</h4>
                                 <ul>
-                                    <li>Requirements import (CSV, Excel, ReqIF, DOORS/Polarion exports)</li>
-                                    <li>Module design spec + Mermaid activity flow diagrams</li>
-                                    <li>Auto-compiled C code with stub/fix loop</li>
-                                    <li>Requirement ↔ test traceability table and run report</li>
+                                    <li>Requirements drive verification — every REQ maps to a checkable criterion and edge cases</li>
+                                    <li>FreeCAD mass properties fed directly into Modelica MultiBody models</li>
+                                    <li>Component-first, standard-library Modelica — diagram-check gate rejects equation-only code</li>
+                                    <li>Verified example: ServoArm actuator — all 25 simulation cases PASS end-to-end</li>
                                 </ul>
                             </div>
 
                             <div class="ai-project-tech">
                                 <span class="ai-tech-pill">Personal AI Lab</span>
-                                <span class="ai-tech-pill">Python</span>
-                                <span class="ai-tech-pill">Streamlit</span>
-                                <span class="ai-tech-pill">Ollama</span>
                                 <span class="ai-tech-pill">Agentic Workflows</span>
-                                <span class="ai-tech-pill">CppUTest</span>
-                                <span class="ai-tech-pill">Mermaid</span>
-                                <span class="ai-tech-pill">WSL</span>
+                                <span class="ai-tech-pill">OpenModelica</span>
+                                <span class="ai-tech-pill">FreeCAD</span>
+                                <span class="ai-tech-pill">Modelica</span>
+                                <span class="ai-tech-pill">opencode</span>
+                                <span class="ai-tech-pill">MCP</span>
+                                <span class="ai-tech-pill">DeepSeek</span>
+                                <span class="ai-tech-pill">Python</span>
+                                <span class="ai-tech-pill">WSL2</span>
                             </div>
 
                             <a href="https://github.com/afeefkt/agentic-sysmodel" target="_blank" rel="noopener noreferrer"
